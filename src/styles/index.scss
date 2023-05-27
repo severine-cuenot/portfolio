@@ -13,7 +13,7 @@
   }
 
   body {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: vars.$font-family;
     color: white;
     background: #c31432;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
