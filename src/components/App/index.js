@@ -1,5 +1,6 @@
 // == Import
 // import { useEffect, useState } from 'react';
+// import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import useScrollTop from '../../hooks/useScrollTop';
 
@@ -21,6 +22,7 @@ import './styles.scss';
 // == Composant
 function App() {
   useScrollTop();
+  // const dispatch = useDispatch();
 
   return (
     <div className="app">
