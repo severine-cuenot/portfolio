@@ -1,16 +1,33 @@
 /* eslint-disable react/button-has-type */
-
+// import { useEffect } from 'react';
+// import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+// import { useDispatch } from 'react-redux';
+// import ariaChange from '../../hooks/ariaChange';
+// import { useState } from 'react';
 
 import './style.scss';
 
 function AppHeader() {
+  // const dispatch = useDispatch();
+  const handleClick = () => {
+    let aria = document.getElementById('main-nav__burger-button').getAttribute('aria-expanded');
+    if (aria === 'true') {
+      aria = 'false';
+    }
+    else {
+      aria = 'true';
+    }
+    document.getElementById('main-nav__burger-button').setAttribute('aria-expanded', aria);
+  };
+
   return (
     <nav id="main-nav" role="navigation" aria-label="Menu de navigation">
       {/* <div>My Logo Here</div> */}
       {/* accessible burger menu */}
       <button
         id="main-nav__burger-button"
+        onClick={handleClick}
         aria-expanded="false"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -19,7 +36,7 @@ function AppHeader() {
         </svg>
         <span>Menu</span>
       </button>
-      <ul className="main-nav__menu visible">
+      <ul className="">
         <li><Link to="/parcours" className="">Parcours</Link></li>
         <li><Link to="/experience" className="">Expérience</Link></li>
         <li><Link to="/realisations" className="">Réalisations</Link></li>
@@ -29,5 +46,9 @@ function AppHeader() {
     </nav>
   );
 }
+
+// AppHeader.propTypes = {
+//   aria: PropTypes.string.isRequired,
+// };
 
 export default AppHeader;
