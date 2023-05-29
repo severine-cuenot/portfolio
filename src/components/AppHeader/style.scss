@@ -1,0 +1,24 @@
+#main-nav__hamburger {
+  margin: 1em;
+  justify-self: end;
+  display: block;
+  background: #fff;
+  border: none;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+#main-nav__hamburger span {
+  display: block;
+  position: relative;
+  top: 15px;
+}
+
+#main-nav__hamburger #expanded {
+  display: none;
+}
+#main-nav__burger-button svg {
+  width: 3em;
+  height: 3em;
+}
+
