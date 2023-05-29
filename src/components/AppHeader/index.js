@@ -11,14 +11,13 @@ import './style.scss';
 function AppHeader() {
   // const dispatch = useDispatch();
   const handleClick = () => {
-    let aria = document.getElementById('main-nav__burger-button').getAttribute('aria-expanded');
-    if (aria === 'true') {
-      aria = 'false';
+    const aria = document.getElementById('main-nav__burger-button').getAttribute('aria-expanded');
+    if (aria.getAttribute('aria-expanded') === 'false') {
+      aria.setAttribute('aria-expanded', 'true');
     }
     else {
-      aria = 'true';
+      aria.setAttribute('aria-expanded', 'false');
     }
-    document.getElementById('main-nav__burger-button').setAttribute('aria-expanded', aria);
   };
 
   return (
@@ -27,8 +26,8 @@ function AppHeader() {
       {/* accessible burger menu */}
       <button
         id="main-nav__burger-button"
-        onClick={handleClick}
         aria-expanded="false"
+        onClick={handleClick}
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           {/* Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
