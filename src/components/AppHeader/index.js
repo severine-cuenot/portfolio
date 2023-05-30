@@ -1,32 +1,22 @@
 /* eslint-disable react/button-has-type */
-// import { useEffect } from 'react';
-// import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
-// import ariaChange from '../../hooks/ariaChange';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 import './style.scss';
 
 function AppHeader() {
-  // const dispatch = useDispatch();
+  const [isExpanded, setExpanded] = useState(false);
   const handleClick = () => {
-    const aria = document.getElementById('main-nav__burger-button').getAttribute('aria-expanded');
-    if (aria.getAttribute('aria-expanded') === 'false') {
-      aria.setAttribute('aria-expanded', 'true');
-    }
-    else {
-      aria.setAttribute('aria-expanded', 'false');
-    }
+    setExpanded(!isExpanded);
   };
 
   return (
     <nav id="main-nav" role="navigation" aria-label="Menu de navigation">
-      {/* <div>My Logo Here</div> */}
+      <div>My Logo Here</div>
       {/* accessible burger menu */}
       <button
         id="main-nav__burger-button"
-        aria-expanded="false"
+        aria-expanded={isExpanded ? 'true' : 'false'}
         onClick={handleClick}
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -35,7 +25,7 @@ function AppHeader() {
         </svg>
         <span>Menu</span>
       </button>
-      <ul className="">
+      <ul className={isExpanded ? 'expanded' : 'not-expanded'}>
         <li><Link to="/parcours" className="">Parcours</Link></li>
         <li><Link to="/experience" className="">Expérience</Link></li>
         <li><Link to="/realisations" className="">Réalisations</Link></li>
