@@ -8,6 +8,14 @@
   line-height: 1;
 }
 
+.expanded {
+  display: block; /* Affiche le menu déroulant lorsque la classe est présente */
+}
+
+.not-expanded {
+  display: none;
+}
+
 #main-nav__hamburger span {
   display: block;
   position: relative;
