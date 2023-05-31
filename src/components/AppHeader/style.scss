@@ -1,3 +1,10 @@
+// Logo
+.main-nav__logo {
+  width: 3em;
+};
+
+// Burger menu
+
 #main-nav__hamburger {
   margin: 1em;
   justify-self: end;
@@ -9,11 +16,11 @@
 }
 
 .expanded {
-  display: block; /* Affiche le menu déroulant lorsque la classe est présente */
+  display: block; /* expande links when class is applied */
 }
 
 .not-expanded {
-  display: none;
+  display: none;  /* hide links when class is applied */
 }
 
 #main-nav__hamburger span {

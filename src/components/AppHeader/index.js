@@ -12,7 +12,7 @@ function AppHeader() {
 
   return (
     <nav id="main-nav" role="navigation" aria-label="Menu de navigation">
-      <div>My Logo Here</div>
+      <div><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></div>
       {/* accessible burger menu */}
       <button
         id="main-nav__burger-button"
