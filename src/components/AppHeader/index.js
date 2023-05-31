@@ -11,11 +11,11 @@ function AppHeader() {
   };
 
   return (
-    <nav id="main-nav" role="navigation" aria-label="Menu de navigation">
-      <div><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></div>
+    <nav className="main-nav" role="navigation" aria-label="Menu de navigation">
+      <img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" />
       {/* accessible burger menu */}
       <button
-        id="main-nav__burger-button"
+        className="main-nav__burger-button"
         aria-expanded={isExpanded ? 'true' : 'false'}
         onClick={handleClick}
       >
@@ -25,7 +25,7 @@ function AppHeader() {
         </svg>
         <span>Menu</span>
       </button>
-      <ul className={isExpanded ? 'expanded' : 'not-expanded'}>
+      <ul className={isExpanded ? 'main-nav__menu-expanded' : 'main-nav__menu-not-expanded'}>
         <li><Link to="/parcours" className="">Parcours</Link></li>
         <li><Link to="/experience" className="">Expérience</Link></li>
         <li><Link to="/realisations" className="">Réalisations</Link></li>

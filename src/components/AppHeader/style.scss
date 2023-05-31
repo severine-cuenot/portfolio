@@ -1,39 +1,34 @@
-// Logo
-.main-nav__logo {
-  width: 3em;
-};
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 1em 0 0.5em;
 
-// Burger menu
+  // Logo
+  &__logo {
+    width: 3.4em;
+  }
 
-#main-nav__hamburger {
-  margin: 1em;
-  justify-self: end;
-  display: block;
-  background: #fff;
-  border: none;
-  font-size: 1.2em;
-  line-height: 1;
+  // Burger
+  &__burger-button {
+    justify-self: end;
+    display: block;
+    background-color: #fff;
+    border: none;
+    border-radius: 5%;
+  }
+
+  &__burger-button svg {
+    width: 3em;
+    height: 3em;
+  }
+
+  &__menu-expanded {
+    display: block; /* expande links when class is applied */
+  }
+  
+  &__menu-not-expanded {
+    display: none;  /* hide links when class is applied */
+  }
 }
 
-.expanded {
-  display: block; /* expande links when class is applied */
-}
-
-.not-expanded {
-  display: none;  /* hide links when class is applied */
-}
-
-#main-nav__hamburger span {
-  display: block;
-  position: relative;
-  top: 15px;
-}
-
-#main-nav__hamburger #expanded {
-  display: none;
-}
-#main-nav__burger-button svg {
-  width: 3em;
-  height: 3em;
-}
 
