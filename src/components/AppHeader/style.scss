@@ -1,25 +1,41 @@
+@use '../../styles/vars';
+
 .main-nav {
   display: flex;
   justify-content: space-between;
   margin: 1em 1em 0 0.5em;
 
-  // Logo
+  // Logo signature
   &__logo {
-    width: 3.4em;
+    height: 5em;
   }
 
   // Burger
   &__burger-button {
-    justify-self: end;
     display: block;
+    width: 4.5em;
     background-color: #fff;
     border: none;
-    border-radius: 5%;
+    border-radius: vars.$btn-radius;
+    font-family: inherit;
+    font-size: vars.$font-medium;
+	  line-height: 1;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 
   &__burger-button svg {
     width: 3em;
     height: 3em;
+  }
+
+  &__burger-button--text {
+      display: block;
+      position: relative;
+      bottom: 3px;
+      
   }
 
   &__menu-expanded {
@@ -30,5 +46,3 @@
     display: none;  /* hide links when class is applied */
   }
 }
-
-

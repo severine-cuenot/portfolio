@@ -4,4 +4,11 @@
 $font-family: 'Inconsolata', sans-serif;
 $font-big: 1.5em; // 24px
 $font-medium: 1.25em; // 20px
-$font-small: 1em; // 
+
+// colors
+$dark-color: #1c0920;
+$yellow: #ffff00;
+$dark-yellow: color.scale($yellow, $blackness: 20%);
+
+//radius
+$btn-radius : 0.375em;
