@@ -9,4 +9,9 @@
   background-color: vars.$dark-color-trans;
   font-size: vars.$font-small;
 
+  &__text {
+    padding-right: 2em;
+  }
+  
+
 }
