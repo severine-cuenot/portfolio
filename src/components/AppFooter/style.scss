@@ -2,7 +2,11 @@
 // @use '../../styles/mixin';
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   margin-top: auto;
-  // background-color: vars.$light-color;
+  padding: 1em;
+  background-color: vars.$dark-color-trans;
+  font-size: vars.$font-small;
 
 }
