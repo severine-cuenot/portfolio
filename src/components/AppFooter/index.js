@@ -7,16 +7,14 @@ function AppFooter() {
   return (
     <footer className="footer">
       <div className="footer__section">
-        <div className="footer__logo">
-          {/* <Link to="/">
-            <Logo />
-          </Link> */}
-          <p className="footer__desc">
-            Monté à la sueur de mon front avec React.
-          </p>
-        </div>
+        <p>
+          Monté à la sueur de mon front (mais avec beaucoup de plaisir)
+          avec React.js et mon cher VS Code.
+        </p>
       </div>
-      <p className="footer__copyright">&copy; Séverine Cuenot{year}</p>
+      <div className="footer__copyright">
+        <p>&copy; Séverine Cuenot {year}</p>
+      </div>
     </footer>
   );
 }
