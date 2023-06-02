@@ -6,7 +6,7 @@ function AppFooter() {
 
   return (
     <footer className="footer">
-      <div className="footer__section">
+      <div className="footer__text">
         <p>
           Monté à la sueur de mon front (mais avec beaucoup de plaisir)
           avec React.js et mon cher VS Code.
