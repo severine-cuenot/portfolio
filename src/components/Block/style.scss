@@ -1,4 +1,30 @@
-.panel {
+@use '../../styles/vars';
+
+p {
+  padding-bottom: 1.2em;
+}
+
+.block {
   position: relative;
   z-index: 1;
+  margin: 2em;
+  line-height: 1.8em;
+}
+
+.home {
+  
+  &__welcome--title {
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+  }
+
+  &__name {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    line-height: 1em;
+  }
+}
+
+.home__name span {
+  color: vars.$yellow;
 }

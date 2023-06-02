@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import './style.scss';
 
-function Page({ children, ...props }) {
+function Page({ children }) {
   return (
-    <main className="page" {...props}>
+    <main className="page">
       {children}
     </main>
   );
