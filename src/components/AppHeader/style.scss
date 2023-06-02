@@ -1,10 +1,19 @@
 @use '../../styles/vars';
 
+// Menu for mobiles
+
 .main-nav {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   margin: 1em 1em 0 0.5em;
 
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
   // Logo signature
   &__logo {
     height: 5em;
@@ -14,35 +23,81 @@
   &__burger-button {
     display: block;
     width: 4.5em;
-    background-color: #fff;
     border: none;
     border-radius: vars.$btn-radius;
-    font-family: inherit;
+    font-family: vars.$font-family;
     font-size: vars.$font-medium;
 	  line-height: 1;
+  }
 
-    @media (min-width: 768px) {
-      display: none;
-    }
+  &__burger-button[aria-expanded='true'] {
+    background-color: vars.$dark-color;
+    color: white;
   }
 
   &__burger-button svg {
     width: 3em;
     height: 3em;
+    fill: vars.$dark-color;
+  }
+
+  &__burger-button[aria-expanded='true'] svg {
+    background: vars.$dark-color;
+    fill: white;
   }
 
   &__burger-button--text {
-      display: block;
-      position: relative;
-      bottom: 3px;
-      
+    display: block;
+    position: relative;
+    bottom: 3px;
   }
 
   &__menu-expanded {
-    display: block; /* expande links when class is applied */
+    display: flex; /* expande links when class is applied */
+    flex-direction:column;
+    background-color: vars.$dark-color;
+    margin-top: 1em;
+    padding: 1em;
+    font-size: vars.$font-medium;
   }
-  
+
+  &__menu-expanded--element{
+    padding: 1em 0.5em;
+    border-bottom: solid 1px vars.$dark-yellow;
+  }
+  &__menu-expanded--element :hover{
+    background-color: vars.$yellow;
+    padding: 0.3em 0.1em;
+    color: vars.$dark-color;
+    font-weight: bold;
+  }
+
   &__menu-not-expanded {
     display: none;  /* hide links when class is applied */
+  }
+}
+
+// Menu for desktop
+
+.main-nav-desktop {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 0 0.5em;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  // Logo signature
+  &__logo {
+    height: 5em;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.21);
+    
   }
 }
