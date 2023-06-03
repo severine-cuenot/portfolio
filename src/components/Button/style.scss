@@ -1,0 +1,86 @@
+@use '../../styles/vars';
+
+.button {
+  font-weight: bold;
+  font-size: 1em;
+  font-family: vars.$font-family;
+  border-radius: vars.$btn-radius;
+  // padding: vars.$space-10 vars.$space-30;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+  // &:focus, &:focus-visible {
+  //   outline-color: vars.$primary-color;
+  //   border-radius: vars.$btn-radius;
+  //   border: 2px solid vars.$primary-color;
+  // }
+
+  &--plain {
+    background-color: vars.$yellow;
+    color: vars.$dark-color;
+    transition: all linear 0.3s;
+    // border: 1px solid vars.$primary-color-alt;
+
+    // &:hover, &:focus {
+    //   background-color: vars.$primary-color-alt;
+    // }
+  }
+
+  // &--outlined {
+  //   background-color: vars.$light-color;
+  //   border: 1px solid vars.$primary-color;
+  //   color: vars.$primary-color;
+  //   transition: all linear 0.3s;
+
+  //   &:hover {
+  //     color: vars.$primary-color-alt;
+  //     border: 1px solid vars.$primary-color-alt;
+  //     text-decoration: none;
+  //   }
+  // }
+
+  // &--delete {
+  //   background-color: vars.$error-color;
+  //   transition: all linear 0.3s;
+  //   color: vars.$light-color;
+  //   border: 1px solid vars.$error-color-alt;
+
+  //   &:hover, &:focus {
+  //     background-color: vars.$error-color-alt;
+  //   }
+  // }
+
+  // &--logout {
+  //   background-color: transparent;
+  //   transition: vars.$transition;
+  //   color: vars.$error-color;
+  //   border: 1px solid vars.$error-color;
+  //   padding: vars.$space-10;
+  //   transform: scale(0.9);
+
+  //   &:hover, &:focus {
+  //     background-color: vars.$error-color;
+  //     color: vars.$light-color;
+
+  //     .logout-icon {
+  //       fill: vars.$light-color;
+  //       transition: vars.$transition;
+  //     }
+  //   }
+  // }
+
+  // &__icon {
+  //   width: vars.$space-20;
+  //   margin-right: vars.$space-10;
+  //   display: none;
+
+  //   @include mixin.media('small') {
+  //     display: flex;
+  //   }
+  // }
+
+  // :has(.button__icon) span {
+  //   margin-right: vars.$space-10;
+  // }
+}

@@ -3,6 +3,7 @@ import Block from 'src/components/Block';
 import Container from '../../components/Container';
 
 import './style.scss';
+import Button from '../../components/Button';
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
             je cherche désormais à consolider cette certitude que le Front,
             c’est encore mieux que le CSS tout seul.
           </p>
+          <Button label="En savoir plus sur mon expérience_" type="button" />
         </Block>
         <Block>
           <img src="../../img/nine_liberty.png" alt="Nine" className="home__img" />
