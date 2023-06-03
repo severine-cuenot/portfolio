@@ -1,0 +1,41 @@
+@use '../../styles/vars';
+
+.block {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  // @media (max-width: 480px) {
+  //   flex-direction: row;
+  //   justify-content: space-around;
+  //   align-items: baseline;
+  // }
+}
+
+.home {
+  &__block {
+    @media (max-width: 480px) {
+      width: 70%;
+    }
+  }
+  
+  &__welcome--title {
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+  }
+
+  &__name {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    line-height: 1em;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+.home__name span {
+  color: vars.$yellow;
+}

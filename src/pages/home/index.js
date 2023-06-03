@@ -1,14 +1,12 @@
-// import { useSelector, useDispatch } from 'react-redux';
-// import { useEffect } from 'react';
 import Page from 'src/components/Page';
 import Block from 'src/components/Block';
 
-// import './style.scss';
+import './style.scss';
 
 function Home() {
   return (
-    <Page>
-      <Block className="block__left">
+    <Page className="block">
+      <Block className="home__block">
         <h1 className="home__welcome--title">
           Hello World_
         </h1>
@@ -27,8 +25,8 @@ function Home() {
           c’est encore mieux que le CSS tout seul.
         </p>
       </Block>
-      <Block className="block__right">
-        img
+      <Block>
+        <img src="../../img/nine_liberty.png" alt="Nine" className="home__img" />
       </Block>
     </Page>
   );
