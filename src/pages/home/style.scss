@@ -1,8 +1,28 @@
 @use '../../styles/vars';
 
 
+
+.main {
+  margin: 2em 2em 0 2em;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  @media (min-width: 1024px) {
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block{
+    width: 100%;
+    @media (min-width: 1024px) {
+      margin: 0;
+    }
+  }
+}
+
 .home {
-  
   &__welcome--title {
     margin-bottom: 0.5em;
     font-size: 1.8em;
@@ -17,7 +37,14 @@
   &__img {
     width: 100%;
     max-width: 600px;
-    margin: auto;
+    margin: 1.5em auto;
+    @media (min-width: 768px) {
+      max-width: 900px;
+      margin: auto 2em;
+    }
+    @media (min-width: 1200px) {
+      margin-left: 5em;
+    }
   }
 
   &__content {
