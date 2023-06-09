@@ -29,6 +29,10 @@ function Home() {
               c’est encore mieux que le CSS tout seul.
             </p>
             <Button label="En savoir plus_" type="button" />
+            <div className="home__logo">
+              <img src="../../img/github-mark-white.png" alt="Aller vers mon profil Github" />
+              <img src="../../img/linkedin2.png" alt="Aller vers mon profil Linkedin" />
+            </div>
           </Block>
           <Block className="home__img--block">
             <img src="../../img/nine_liberty.png" alt="Nine" className="home__img" />
