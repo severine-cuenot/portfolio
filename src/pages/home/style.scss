@@ -1,14 +1,11 @@
 @use '../../styles/vars';
 
 
-
 .main {
   line-height: 1.8em;
-  
 
   @media (min-width: 768px) {
     display: flex;
-    
   }
 
   @media (min-width: 1024px) {
@@ -28,6 +25,7 @@
 
   &__img-block {
     @media (min-width: 1024px) {
+      display: block;
       width: 40%;
     }
   }
