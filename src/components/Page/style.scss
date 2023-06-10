@@ -1,7 +1,8 @@
 .page {
-  // margin: auto;
-  padding: 5em 2em 2em 1em;
-  @media (min-width: 1200px) {
-    padding: 5em 0 3em;
+  padding: 5em 3em 2em 3em;
+
+  @media (min-width: 1024px) {
+    padding:0;
+    max-width: fit-content;
   }
 }
