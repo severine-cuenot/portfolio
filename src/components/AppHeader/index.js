@@ -1,6 +1,7 @@
 /* eslint-disable react/button-has-type */
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Button from '../Button';
 
 import './style.scss';
 
@@ -46,7 +47,9 @@ function AppHeader() {
           <li className="main-nav-desktop__element"><Link to="/experience">1. Expérience</Link></li>
           <li className="main-nav-desktop__element"><Link to="/realisations">2. Réalisations</Link></li>
           <li className="main-nav-desktop__element"><Link to="/contact">3. Contact</Link></li>
-          <li className="main-nav-desktop__btn--CV"><a href="../../pdf/severine_cuenot_dev_cv.pdf" target="_blank">4. Télécharger mon CV</a></li>
+          <li><a href="../../pdf/severine_cuenot_dev_cv.pdf" target="_blank"><Button label="4. Télécharger mon CV" className="button__CV" type="button" /></a></li>
+          {/* <button className="main-nav-desktop__btn--CV" type="button">
+          4. Télécharger mon CV</button> */}
         </ul>
       </nav>
 

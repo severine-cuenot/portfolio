@@ -1,16 +1,16 @@
 import Page from 'src/components/Page';
-import Block from 'src/components/Block';
+// import Block from 'src/components/Block';
 import Container from '../../components/Container';
+import Button from '../../components/Button';
 
 import './style.scss';
-import Button from '../../components/Button';
 
 function Home() {
   return (
     <Page>
       <Container>
         <section className="main">
-          <Block className="main__block">
+          <article className="main__block">
             <h1 className="home__welcome--title">
               Hello World_
             </h1>
@@ -30,13 +30,13 @@ function Home() {
             </p>
             <Button label="En savoir plus_" type="button" />
             <div className="home__logo">
-              <img src="../../img/github-mark-white.png" alt="Aller vers mon profil Github" />
-              <img src="../../img/linkedin2.png" alt="Aller vers mon profil Linkedin" />
+              <a href="https://github.com/severine-cuenot" target="_blank" rel="noreferrer"><img src="../../img/github-mark-white.png" alt="Aller vers mon profil Github" /></a>
+              <a href="https://www.linkedin.com/in/severine-cuenot/" target="_blank" rel="noreferrer"><img src="../../img/linkedin2.png" alt="Aller vers mon profil Linkedin" /></a>
             </div>
-          </Block>
-          <Block className="home__img--block">
+          </article>
+          <article className="main__img-block">
             <img src="../../img/nine_liberty.png" alt="Nine" className="home__img" />
-          </Block>
+          </article>
         </section>
       </Container>
     </Page>

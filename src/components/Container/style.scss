@@ -1,19 +1,16 @@
 .container {
-  // width: 100%;
-  // margin: 0 auto;
-  
+
   @media (min-width: 768px) {
+    padding: 3em;
     max-width: 90%;
-    margin: 0;
   }
 
   @media (min-width: 1024px) {
-    max-width: 1200px;
-    margin: 3em 5em;
+    margin:auto;
+    max-width: 78%;
   }
 
   @media (min-width: 1200px)  {
     max-width: 1200px;
-    margin: 3em 5em;
   }
 }
