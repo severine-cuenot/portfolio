@@ -11,13 +11,11 @@ function AppHeader() {
     setExpanded(!isExpanded);
   };
 
-  // const downloadLink = `${process.env.PUBLIC_URL}/pdf/severine_cuenot_def_cv.pdf`;
-
   return (
     <div>
       <nav className="main-nav" role="navigation" aria-label="Menu de navigation">
         <div className="main-nav__block">
-          <Link to="/"><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></Link>
+          <Link to="/" title="retourner à la page d'accueil'"><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></Link>
           {/* accessible burger menu with the precious help of W3C and Stefany Newman */}
           <button
             className="main-nav__burger-button"
@@ -36,7 +34,7 @@ function AppHeader() {
           <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/experience">1. Expérience</Link></li>
           <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/realisations">2. Réalisations</Link></li>
           <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/contact">3. Contact</Link></li>
-          <li className="main-nav__menu-expanded--element" onClick={handleClick}>4. Télécharger mon CV</li>
+          <li className="main-nav__menu-expanded--element" onClick={handleClick}><a href="../../pdf/severine_cuenot_dev_cv.pdf">4. Télécharger mon CV</a></li>
         </ul>
       </nav>
       {/* // Navbar for desktop */}
@@ -48,17 +46,11 @@ function AppHeader() {
           <li className="main-nav-desktop__element"><Link to="/realisations">2. Réalisations</Link></li>
           <li className="main-nav-desktop__element"><Link to="/contact">3. Contact</Link></li>
           <li><a href="../../pdf/severine_cuenot_dev_cv.pdf" target="_blank"><Button label="4. Télécharger mon CV" className="button__CV" type="button" /></a></li>
-          {/* <button className="main-nav-desktop__btn--CV" type="button">
-          4. Télécharger mon CV</button> */}
         </ul>
       </nav>
 
     </div>
   );
 }
-
-// AppHeader.propTypes = {
-//   aria: PropTypes.string.isRequired,
-// };
 
 export default AppHeader;
