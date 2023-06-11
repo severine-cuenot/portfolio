@@ -1,8 +1,10 @@
 import Page from '../../components/Page';
+import ContactForm from './ContactForm';
 
 import './style.scss';
 
 function Contact() {
+  // hashing email in many parts to avoid spam robots, with the help of Safe Brand website
   const emailPart1 = 'severine.cuenot.dev';
   const emailPart2 = 2 ** 6;
   const emailPart3 = String.fromCharCode(emailPart2);
@@ -14,14 +16,14 @@ function Contact() {
   return (
     <Page>
       <section>
-        <header>
-          <h1>Contact</h1>
-          <p>
+        <header className="section__header">
+          <h1 className="section__title">Contact</h1>
+          <p className="contact__text">
             Si vous souhaitez me contacter, vous pouvez
             m'écrire à <a href={emailLink}>{emailText}</a> ou bien remplir le formulaire ci-dessous.
           </p>
-
         </header>
+        <ContactForm />
       </section>
     </Page>
   );

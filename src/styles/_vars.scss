@@ -2,13 +2,14 @@
 
 // font variables
 $font-family: 'Inconsolata', sans-serif;
-$font-big: 1.5em; // 24px
-$font-medium: 1.25em; // 20px
+$font-big: 2.5em;
+$font-medium: 1.8em;
 $font-small: 0.7em;
 
 // colors
 $dark-color: #1c0920;
 $dark-color-trans: #1c0920d2;
+$white-color-trans:  rgba(255, 255, 255, 0.21);
 $red: #be1432;
 $yellow: #ffff00;
 $dark-yellow: color.scale($yellow, $blackness: 20%);

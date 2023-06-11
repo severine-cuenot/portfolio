@@ -32,7 +32,7 @@ function Home() {
             <span>Développeuse Web</span>
           </h2>
           <div className="timer">
-            <Link to="/contact">
+            <Link to="/contact" className="timer__link">
               <span>&#9654; Disponible</span> à partir du
               <span>
                 {' '} {/* add a space */}

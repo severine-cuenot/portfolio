@@ -21,5 +21,26 @@
 
   }
 
+  .section {
+    &__header {
+      margin-bottom: 1.5em;
+      
+    }
+
+    &__title {
+      font-size: vars.$font-big;
+      margin-bottom: 1.2em;
+    }
+  }
+
+  a {
+    color: vars.$yellow;
+  }
+
+  a:hover {
+    color: vars.$red;
+    background-color: vars.$yellow;
+  }
+
   
 
