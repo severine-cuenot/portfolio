@@ -1,0 +1,108 @@
+@use '../../styles/vars';
+
+
+.main {
+  line-height: 1.8em;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: -10em;
+    margin-left: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__block {
+    // width: 100%;
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  &__img-block {
+    @media (min-width: 1024px) {
+      display: block;
+      width: 40%;
+    }
+  }
+}
+
+.home {
+  &__welcome--title {
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+  }
+
+  &__name {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__logo img {
+    height: 3em;
+    margin-top: 1.6em;
+    padding-right: 1.2em;
+  }
+
+  &__img {
+    width: 81%;
+    max-width: 600px;
+    margin: 1.5em;
+    
+    @media (min-width: 768px) {
+      width: 100%;
+      max-width: 900px;
+      margin: 2em 5em;
+    }
+    @media (min-width: 1280px) {
+      // width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  &__content {
+    padding-bottom: 1.2em;
+  }
+}
+
+.home__name span {
+  color: vars.$yellow;
+}
+
+.timer {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding-bottom: 1em;
+}
+// Animation by qpi65
+.timer span {
+  transition: .5s linear;
+}
+.timer:hover span:nth-child(1){
+  margin-right: 0.5em;
+}
+.timer:hover span:nth-child(1):after{
+  content: "";
+}
+.timer:hover span:nth-child(2){
+  margin-left: 0.5em;
+}
+.timer:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+

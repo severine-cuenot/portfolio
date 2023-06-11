@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import './style.scss';
 
-function Panel({ children, ...props }) {
+function Panel({ children }) {
   return (
-    <section className="panel" {...props}>
+    <section className="block">
       {children}
     </section>
   );

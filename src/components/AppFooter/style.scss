@@ -1,5 +1,4 @@
 @use '../../styles/vars';
-// @use '../../styles/mixin';
 
 .footer {
   display: flex;
@@ -10,7 +9,17 @@
   font-size: vars.$font-small;
 
   &__text {
+    width: 60%;
     padding-right: 2em;
+    
+  }
+
+  &__copyright {
+    width: 40%;
+    padding-right: 1em;
+    @media (min-width: 768px) {
+      text-align: right;
+    }
   }
   
 

@@ -1,5 +1,4 @@
-.page {
-  padding: 5em 3em 2em 3em;
+.container {
 
   @media (min-width: 768px) {
     padding: 3em;
@@ -10,7 +9,7 @@
     max-width: 74%;
   }
 
-  @media (min-width: 1280px)  {
+  @media (min-width: 1200px)  {
     max-width: 74%;
   }
 }

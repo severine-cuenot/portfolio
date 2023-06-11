@@ -1,4 +1,19 @@
-.panel {
-  position: relative;
-  z-index: 1;
+@use '../../styles/vars';
+
+.block {
+  // margin: 2em;
+  line-height: 1.8em;
 }
+
+.main__block {
+  // width: 100%;
+  @media (min-width: 1024px) {
+    width: 95%;
+  }
+}
+
+// .main__img-block {
+//   @media (min-width: 1024px) {
+//     width: 20%;
+//   }
+// }
