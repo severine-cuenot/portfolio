@@ -1,3 +1,21 @@
-.arobase::before {
-  content: "\000040";
+@use '../../styles/vars';
+
+
+.contact {
+
+  // &__text a {
+  //   color: vars.$yellow;
+  // }
+
+  // &__text a:hover {
+  //   color: vars.$dark-color;
+  // }
+}
+
+.form {
+  width:100%;
+  margin: auto;
+  padding: 2em;
+  border-radius: vars.$btn-radius;
+  background-color: vars.$white-color-trans;
 }

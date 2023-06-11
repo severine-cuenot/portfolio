@@ -23,6 +23,8 @@
   }
 
   &__img-block {
+    width:100%;
+    margin: auto;
     @media (min-width: 1024px) {
       display: block;
       width: 40%;
@@ -33,11 +35,11 @@
 .home {
   &__welcome--title {
     margin-bottom: 0.5em;
-    font-size: 1.8em;
+    font-size: vars.$font-medium;
   }
 
   &__name {
-    font-size: 2.5em;
+    font-size: vars.$font-big;
     margin-bottom: 0.5em;
     line-height: 1em;
   }
@@ -53,9 +55,8 @@
   }
 
   &__img {
-    width: 81%;
+    width: 80%;
     max-width: 600px;
-    margin: 1.5em;
     
     @media (min-width: 768px) {
       width: 100%;
@@ -75,6 +76,14 @@
 
 .home__name span {
   color: vars.$yellow;
+}
+
+.timer__link {
+  color: white;
+}
+
+.timer__link:hover {
+  display: none;
 }
 
 .timer {
