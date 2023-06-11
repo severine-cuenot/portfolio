@@ -1,0 +1,50 @@
+@use '../../styles/vars';
+
+.button {
+  font-weight: bold;
+  font-size: 1em;
+  font-family: vars.$font-family;
+  text-align: left;
+  border: none;
+  border-radius: vars.$btn-radius;
+  margin-top: 0.8em;
+  padding: 1em;
+  display: flex;
+  // align-items: center;
+  width: fit-content;
+  line-height: 1.8em;
+  background-color: vars.$yellow;
+  @media (min-width: 768px) {
+    padding: 0.5em 1em;
+  }
+
+  &:focus, &:focus-visible {
+    outline-color: white;
+    border-radius: vars.$btn-radius;
+    border: 4px solid white;
+  }
+
+  &:hover {
+    background-color: vars.$dark-color;
+    color: white;
+  }
+}
+
+.button__CV {
+  display: flex;
+  align-items: center;
+  font-size: inherit;
+  font-family: vars.$font-family;
+  border: none;
+  padding: 0 2em;
+  background-color: vars.$yellow;
+  color: vars.$red;
+  @media (min-width: 768px) {
+    padding: 1.547em;
+  }
+
+  &:hover {
+    background-color: vars.$red;
+    color: white;
+  }
+}
