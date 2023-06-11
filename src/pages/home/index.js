@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import Page from 'src/components/Page';
 // import Block from 'src/components/Block';
 import Container from '../../components/Container';
@@ -30,13 +32,17 @@ function Home() {
               <span>Développeuse Web</span>
             </h2>
             <div className="timer">
-              Disponible à partir du
-              {' '} {/* add a space */}
-              {dateState.toLocaleDateString('fr-FR', {
-                day: 'numeric',
-                month: 'short',
-                year: 'numeric',
-              })}.
+              <Link to="/contact">
+                <span>Disponible</span> à partir du
+                <span>
+                  {' '} {/* add a space */}
+                  {dateState.toLocaleDateString('fr-FR', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric',
+                  })}.
+                </span>
+              </Link>
             </div>
             <p className="home__content">
               Illustratrice de formation, j’ai découvert par hasard que le CSS,
