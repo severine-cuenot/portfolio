@@ -12,10 +12,48 @@
   // }
 }
 
+label {
+  margin-bottom: 0.6em;
+}
+
+input {
+  border: 1px solid vars.$dark-color-trans;
+  border-radius: vars.$btn-radius;
+  font-family: vars.$font-family;
+  font-size: 1em;
+  padding-left: 0.625em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+}
+
+textarea {
+  min-height: 3.5em;
+  border: 1px solid vars.$dark-color-trans;
+  border-radius: vars.$btn-radius;
+  font-family: vars.$font-family;
+  font-size: 1em;
+  padding-left: 0.625em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+}
 .form {
   width:100%;
   margin: auto;
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
   border-radius: vars.$btn-radius;
   background-color: vars.$white-color-trans;
+
+  &__warning {
+    padding: 1em;
+    font-size: vars.$font-small;
+    font-style: italic;
+  }
+
+  &__field {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
