@@ -1,12 +1,7 @@
 @use 'reset';
 @use 'vars';
 
-/*body {
-  font-family: sans-serif;
-}*/
-
-
-  // or you can import your own font
+  // import your own font
   @font-face {
     font-family: 'Inconsolata';
     src: url('../assets/fonts/Inconsolata-Regular.ttf');
@@ -14,11 +9,11 @@
 
   body {
     font-family: vars.$font-family;
+    font-size: 1em;
     color: white;
     background: #c31432;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   }
 
   .section {
