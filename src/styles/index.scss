@@ -16,12 +16,12 @@
     background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
+  // SECTIONS
   .section {
     padding: 5em 2em 2em;
 
     &__header {
       margin-bottom: 1.5em;
-      
     }
 
     &__title {
@@ -30,14 +30,14 @@
     }
   }
 
-  // a {
-  //   color: vars.$yellow;
-  // }
+  // LINKS a
+  .link {
+    color: vars.$yellow;
+  }
 
-  // a:hover {
-  //   color: vars.$red;
-  //   background-color: vars.$yellow;
-  // }
-
+  .link:hover {
+    color: vars.$red;
+    background-color: vars.$yellow;
+  }
   
 

@@ -20,7 +20,7 @@ function Contact() {
           <h1 className="section__title">Contact</h1>
           <p className="contact__text">
             Si vous souhaitez me contacter, vous pouvez
-            m'écrire à <a href={emailLink}>{emailText}</a> ou bien remplir le formulaire ci-dessous.
+            m'écrire à <a href={emailLink} className="link">{emailText}</a> ou bien remplir le formulaire ci-dessous.
           </p>
         </header>
         <ContactForm />
