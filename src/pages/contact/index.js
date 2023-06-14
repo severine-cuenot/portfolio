@@ -15,7 +15,7 @@ function Contact() {
 
   return (
     <Page>
-      <section>
+      <section className="section">
         <header className="section__header">
           <h1 className="section__title">Contact</h1>
           <p className="contact__text">
