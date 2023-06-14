@@ -33,6 +33,10 @@ textarea {
   flex-direction: column;
   border-radius: vars.$btn-radius;
   background-color: vars.$white-color-trans;
+  @media (min-width: 768px) {
+    width: 70%;
+    max-width: 600px;
+  }
 
   &__warning {
     padding: 1em;
