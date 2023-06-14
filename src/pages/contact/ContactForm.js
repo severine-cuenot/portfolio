@@ -19,11 +19,11 @@ function ContactForm() {
     emailjs.sendForm('service_szuxjkw', 'contact_form', form.current, 'CpWh0jpgfGEz8GguY')
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
           alert('SUCCESS!');
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
           alert('FAILED...', error);
         },
       );
