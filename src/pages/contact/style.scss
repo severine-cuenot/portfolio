@@ -1,17 +1,6 @@
 @use '../../styles/vars';
 
 
-.contact {
-
-  // &__text a {
-  //   color: vars.$yellow;
-  // }
-
-  // &__text a:hover {
-  //   color: vars.$dark-color;
-  // }
-}
-
 label {
   margin-bottom: 0.6em;
 }
@@ -36,6 +25,7 @@ textarea {
   padding-top: 0.625em;
   padding-bottom: 0.625em;
 }
+
 .form {
   width:100%;
   margin: auto;
