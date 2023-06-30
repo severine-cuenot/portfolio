@@ -1,4 +1,10 @@
-### Git naming convention
+# My dear Portfolio
+
+## Webpack
+
+Webpack was provided by Ecole O'clock :kissing_closed_eyes:
+
+## Git naming convention
 
 I'm using [Gitmoji](https://gitmoji.dev/) + [conventional commits](https://www.conventionalcommits.org/)
 
@@ -27,5 +33,5 @@ I'm using [Gitmoji](https://gitmoji.dev/) + [conventional commits](https://www.c
 ```
 
 ```bash
-:sparkles:: refacto : commit name
+:sparkles: refacto : commit name
 ```
