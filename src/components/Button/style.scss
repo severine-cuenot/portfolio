@@ -18,6 +18,23 @@
     padding: 0.5em 1em;
   }
 
+  &__form {
+    margin-top: 0.8em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: vars.$font-family;
+    text-align: left;
+    border: none;
+    border-radius: vars.$btn-radius;
+    padding: 1em;
+    display: flex;
+    width: fit-content;
+    line-height: 1.8em;
+    background-color: vars.$yellow;
+  }
+
   &:focus, &:focus-visible {
     outline-color: white;
     border-radius: vars.$btn-radius;

@@ -1,16 +1,16 @@
 .page {
-  padding: 5em 3em 2em 3em;
+  // padding: 5em 2em 2em;
 
   @media (min-width: 768px) {
-    padding: 3em;
-    max-width: 74%;
+    padding: 1em;
+    max-width: 100%;
   }
 
   @media (min-width: 1024px) {
-    max-width: 74%;
+    // max-width: 74%;
   }
 
   @media (min-width: 1280px)  {
-    max-width: 74%;
+    // max-width: 74%;
   }
 }
