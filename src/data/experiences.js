@@ -3,7 +3,7 @@ export default [
     id: 0,
     title: 'Publications Agora',
     content:
-      'Tenetur ullam rerum ad iusto possimus sequi <strong>mollitia<\/strong> dolore sunt quam praesentium. Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.',
+      'Tenetur ullam rerum ad iusto possimus sequi <strong>mollitia</strong> dolore sunt quam praesentium. Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.',
   },
   {
     id: 1,

@@ -77,15 +77,15 @@
   line-height: 1.8em;
   background-color: white;
 
-  &:focus, &:focus-visible {
+  &:focus-visible {
     outline-color: vars.$yellow;
     border-radius: vars.$btn-radius;
-    border: 4px solid vars.$yellow;;
+    border: 4px solid vars.$yellow;
   }
 
-  &:hover {
+  &:hover, &:focus  {
     background-color: vars.$dark-color;
     color: white;
+    border: 1px solid vars.$yellow;
   }
-
 }
