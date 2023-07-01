@@ -7,6 +7,7 @@ import './style.scss';
 function Accordion() {
   // console.log(experiences);
   const [clicked, setClicked] = useState('0');
+  // eslint-disable-next-line consistent-return
   const handleToggle = (id) => {
     if (clicked === id) {
       return setClicked('0');
@@ -15,7 +16,7 @@ function Accordion() {
   };
 
   return (
-    <ul>
+    <ul className="accordion_list">
       {experiences.map((experience) => (
         <AccordionContent
           key={experience.id}

@@ -1,17 +1,20 @@
+/* eslint-disable react/no-danger */
 import PropTypes from 'prop-types';
 import './style.scss';
 
 function AccordionContent({ experience, onToggle, active }) {
   const { title, content } = experience;
-  // console.log(experience);
+  // Transform row html in JSON to "real" html. Merci ChatGPT !
+  const createMarkup = () => ({ __html: content });
+
   return (
-    <li className={`accordion_item ${active ? 'active' : ''}`}>
-      <button className="button" type="button" onClick={onToggle}>
+    <li className={`accordion__item ${active ? 'active' : ''}`}>
+      <button className="button__accordion" type="button" onClick={onToggle}>
         {title}
-        <span className="control">{active ? '—' : '+'}</span>
+        <span className="accordion__picto">{active ? '▼' : '►'}</span>
       </button>
       <div className={`answer_wrapper ${active ? 'open' : ''}`}>
-        <div className="answer">{content}</div>
+        <div className="accordion__content" dangerouslySetInnerHTML={createMarkup()} />
       </div>
     </li>
   );
@@ -22,5 +25,7 @@ AccordionContent.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
   }).isRequired,
+  active: PropTypes.bool.isRequired,
+  onToggle: PropTypes.func.isRequired,
 };
 export default AccordionContent;
