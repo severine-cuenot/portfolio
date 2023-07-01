@@ -17,6 +17,47 @@
   }
 }
 
+.date {
+  font-size: vars.$font-small;
+}
+.job {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.content {
+  &__subtitle {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.8em 0;
+  }
+  &__list {
+    margin-left: 1em;
+    padding: 1em 0;
+    list-style: inside;
+    list-style-type: square;
+  }
+  &__skills {
+    display: flex;
+    flex-direction: column;
+  }
+  &__skills--list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+  }
+  &__skills--title {
+    text-transform: uppercase;
+    margin: 1em 0;
+  }
+  &__skills--items img{
+    max-width: 120px;
+    max-height: 50px;
+  }
+}
+
 /* activate toggle */
 .accordion__item.active {
   padding: 1em;
