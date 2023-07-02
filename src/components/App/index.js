@@ -9,7 +9,7 @@ import useScrollTop from '../../hooks/useScrollTop';
 import Home from '../../pages/Home';
 import About from '../../pages/About';
 import Experience from '../../pages/Experience';
-import Works from '../../pages/Works';
+import Realisations from '../../pages/realisations';
 import Contact from '../../pages/Contact';
 import NotFound from '../../pages/404';
 
@@ -32,7 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/parcours" element={<About />} />
         <Route path="/experience" element={<Experience />} />
-        <Route path="/realisations" element={<Works />} />
+        <Route path="/realisations" element={<Realisations />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
