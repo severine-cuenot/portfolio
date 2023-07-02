@@ -65,3 +65,28 @@
     color: white;
   }
 }
+.button__accordion {
+  width : 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: vars.$btn-radius;
+  font-size: inherit;
+  font-weight: bold;
+  font-family: vars.$font-family;
+  color: vars.$dark-color;
+  border: none;
+  line-height: 1.8em;
+  background-color: white;
+
+  &:focus-visible {
+    outline-color: vars.$yellow;
+    border-radius: vars.$btn-radius;
+    border: 4px solid vars.$yellow;
+  }
+
+  &:hover, &:focus  {
+    background-color: vars.$dark-color;
+    color: white;
+    border: 1px solid vars.$yellow;
+  }
+}

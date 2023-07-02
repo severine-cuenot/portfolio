@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 function Button({
-  label, btnstyle, isSubmit, icon, ...props
+  label, btnstyle, isSubmit, icon, title, ...props
 }) {
   return (
     <button
@@ -22,10 +22,12 @@ Button.defaultProps = {
   icon: null,
   isSubmit: false,
   label: '',
+  title: '',
 };
 
 Button.propTypes = {
   label: PropTypes.string,
+  title: PropTypes.string,
   btnstyle: PropTypes.string,
   icon: PropTypes.string,
   isSubmit: PropTypes.bool,
