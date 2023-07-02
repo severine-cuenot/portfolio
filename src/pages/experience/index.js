@@ -1,26 +1,19 @@
 import Page from '../../components/Page';
-
-import './style.scss';
+import Accordion from '../../components/Accordion';
 
 function Experience() {
   return (
     <Page>
-      <section className="experience__navigation">
-        <nav>
-          <ul>
-            <li>Publications Agora</li>
-            <li>Illustration freelance</li>
-            <li>Divers</li>
-          </ul>
-        </nav>
-      </section>
-      <section className="experience_content">
+      <section className="section">
+        <header className="section__header">
+          <h1 className="section__title">Expérience</h1>
+        </header>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Provident iste dolores id soluta,
-          voluptatum voluptas, error suscipit dolorem beatae illo iure eum consectetur
-          cupiditate perferendis adipisci dolore facilis ipsum perspiciatis.
+          Pour connaître le détail des tâches qui m'ont été confiées
+          au fil des ans, cliquez sur le nom des entreprises pour lesquelles
+          j'ai travaillé.
         </p>
+        <Accordion />
       </section>
     </Page>
   );
