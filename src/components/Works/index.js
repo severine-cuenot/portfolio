@@ -1,13 +1,18 @@
+import works from '../../data/works';
 import OneWork from './oneWork';
 
 import './style.scss';
 
 function Works() {
   return (
-    <div>
-      <h1>Works ici</h1>
-      <OneWork />
-    </div>
+    <ul className="works_list">
+      {works.map((work) => (
+        <OneWork
+          key={work.id}
+          work={work}
+        />
+      ))}
+    </ul>
   );
 }
 
