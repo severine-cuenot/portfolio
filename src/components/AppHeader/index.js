@@ -30,22 +30,24 @@ function AppHeader() {
           </button>
         </div>
         <ul className={isExpanded ? 'main-nav__menu-expanded' : 'main-nav__menu-not-expanded'}>
-          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/parcours">0. Parcours</Link></li>
-          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/experience">1. Expérience</Link></li>
-          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/realisations">2. Réalisations</Link></li>
-          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/contact">3. Contact</Link></li>
-          <li className="main-nav__menu-expanded--element" onClick={handleClick}><a href="../../pdf/severine_cuenot_dev_cv.pdf">4. Télécharger mon CV</a></li>
+          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/">0. Accueil</Link></li>
+          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/parcours">1. Parcours</Link></li>
+          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/experience">2. Expérience</Link></li>
+          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/realisations">3. Réalisations</Link></li>
+          <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/contact">4. Contact</Link></li>
+          <li className="main-nav__menu-expanded--element" onClick={handleClick}><a href="../../pdf/severine_cuenot_dev_cv.pdf">5. Télécharger mon CV</a></li>
         </ul>
       </nav>
       {/* // Navbar for desktop */}
       <nav className="main-nav-desktop" role="navigation" aria-label="Menu de navigation">
         <Link to="/"><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav-desktop__logo" /></Link>
         <ul className="main-nav-desktop__block">
-          <li className="main-nav-desktop__element"><Link to="/parcours">0. Parcours</Link></li>
-          <li className="main-nav-desktop__element"><Link to="/experience">1. Expérience</Link></li>
-          <li className="main-nav-desktop__element"><Link to="/realisations">2. Réalisations</Link></li>
-          <li className="main-nav-desktop__element"><Link to="/contact">3. Contact</Link></li>
-          <li><a href="../../pdf/severine_cuenot_dev_cv.pdf" target="_blank"><Button label="4. Télécharger mon CV" className="button__CV" type="button" /></a></li>
+          <li className="main-nav-desktop__element"><Link to="/">0. Accueil</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/parcours">1. Parcours</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/experience">2. Expérience</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/realisations">3. Réalisations</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/contact">4. Contact</Link></li>
+          <li><a href="../../pdf/severine_cuenot_dev_cv.pdf" target="_blank"><Button label="5. Télécharger mon CV" className="button__CV" type="button" /></a></li>
         </ul>
       </nav>
 
