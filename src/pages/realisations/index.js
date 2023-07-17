@@ -6,7 +6,12 @@ import './style.scss';
 function Realisations() {
   return (
     <Page>
-      <Works />
+      <section className="section">
+        <header className="section__header">
+          <h1 className="section__title">Réalisations notables</h1>
+        </header>
+        <Works />
+      </section>
     </Page>
   );
 }
