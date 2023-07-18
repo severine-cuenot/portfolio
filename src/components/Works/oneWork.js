@@ -13,7 +13,7 @@ function OneWork({ work }) {
   return (
     <li>
       <div>
-        {img}
+        <img src={`../../img/${img}`} alt={`${title}`} />
       </div>
       <div>
         {title} {context} {text} {tools} {link}
