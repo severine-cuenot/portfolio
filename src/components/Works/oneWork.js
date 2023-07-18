@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import './style.scss';
+import Button from '../Button';
 
 function OneWork({ work }) {
   const {
@@ -17,8 +18,8 @@ function OneWork({ work }) {
         <div className="work__content">{text}</div>
         <div className="work__tools">{tools}</div>
         <div className="work__link">
-          <a href={link}>Voir la créa</a>
-          <img src="../../img/external-link.png" alt="Redirige vers le site de la créa" className="work__link--img" />
+          <a href={link}><Button label="Voir la créa_" />
+          </a>
         </div>
       </div>
     </li>
