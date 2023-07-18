@@ -12,8 +12,8 @@ function AccordionContent({ experience, onToggle, active }) {
   return (
     <li className={`accordion__item ${active ? 'active' : ''}`}>
       <button className="button__accordion" type="button" onClick={onToggle}>
+        <span className="accordion__picto">{active ? '—' : '+'}</span>
         {title}
-        <span className="accordion__picto">{active ? '▼' : '►'}</span>
       </button>
       {/* <div className={`answer_wrapper ${active ? 'open' : ''}`}>
         <div className="accordion__content" dangerouslySetInnerHTML={createMarkupForDate()} />
