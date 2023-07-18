@@ -16,6 +16,7 @@ function OneWork({ work }) {
         <div className="work__title">{title}</div>
         <div className="work__context">{context}</div>
         <div className="work__content">{text}</div>
+        <h2>Outils utilisés&nbsp;:</h2>
         <div className="work__tools">{tools}</div>
         <div className="work__link">
           <a href={link}><Button label="Voir la créa_" />
