@@ -18,8 +18,7 @@
     text-align: center;
   }
   &__img--src {
-    max-width: 80%;
-    width:fit-content;
+    width: 100%;
   }
   &__description {
     display: flex;
@@ -44,9 +43,8 @@
     align-items: center;
   }
   &__tool--img {
-    width: 50px;
-    margin-bottom: 0.3em;
-    padding: 0 0.3em;
+    height: 50px;
+    padding: 0.3em;
   }
   &__link {
     display: flex;
