@@ -1,4 +1,3 @@
-/* eslint-disable react/no-danger */
 import PropTypes from 'prop-types';
 import './style.scss';
 
@@ -6,14 +5,11 @@ function OneWork({ work }) {
   const {
     title, context, img, text, tools, link,
   } = work;
-  // Transform row html in JSON to "real" html. Merci ChatGPT !
-  // const createMarkup = () => ({ __html: content });
-  // const createMarkupForDate = () => ({ __html: date });
-  // const createMarkupForJob = () => ({ __html: job });
+
   return (
-    <li>
-      <div>
-        <img src={`../../img/${img}`} alt={`${title}`} />
+    <li className="work__pannel">
+      <div className="work__img">
+        <img src={`../../img/${img}`} alt={`${title}`} className="work__img--src" />
       </div>
       <div>
         {title} {context} {text} {tools} {link}
