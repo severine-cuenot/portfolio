@@ -1,0 +1,19 @@
+@use '../../styles/vars';
+
+
+.work {
+  &__pannel {
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+  }
+  &__img--src {
+    max-width: 80%;
+    width:fit-content;
+  }
+}
