@@ -15,15 +15,25 @@
   &__picto {
     padding-left: 0.2em;
   }
-}
-
-.date {
-  font-size: vars.$font-small;
-}
-.job {
-  font-weight: bold;
-  font-size: 1.3em;
-  margin-bottom: 1em;
+  &__date {
+    font-size: vars.$font-small;
+  }
+  &__job {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
+  &__tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__tools--img {
+    width: 50px;
+    max-height: 40px;
+    margin-bottom: 0.3em;
+    padding: 0 0.3em;
+  }
 }
 
 .content {

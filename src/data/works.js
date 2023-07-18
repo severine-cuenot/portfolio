@@ -14,7 +14,7 @@ export default [
     context: 'Publications Agora',
     img: 'signature.png',
     text: 'blablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbi',
-    tools: [<img src="../../img/signature.png" alt="blabla" className="work__tool--img" />, <img src="../../img/signature.png" alt="blabla" className="work__tool--img" />],
+    tools: [<img src="../../img/html5.png" alt="HTML5" className="work__tool--img" />, <img src="../../img/css3.png" alt="CSS3" className="work__tool--img" />],
     link: 'signature.png',
   },
 ];
