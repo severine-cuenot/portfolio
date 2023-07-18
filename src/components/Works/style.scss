@@ -6,6 +6,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5em;
+    padding: 1em;
+    color: white;
+    background-color: vars.$white-color-trans;
+    border-radius: vars.$btn-radius;
   }
   &__img {
     width: 100%;
@@ -37,10 +41,19 @@
   &__tools {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
   &__tool--img {
     width: 50px;
     margin-bottom: 0.3em;
     padding: 0 0.3em;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  &__link--img {
+    width: 20px;
+    margin-left: 0.5em;
   }
 }
