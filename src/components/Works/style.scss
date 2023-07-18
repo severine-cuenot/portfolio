@@ -1,6 +1,9 @@
 @use '../../styles/vars';
 
-
+h2 {
+    padding-top: 1em;
+    font-size: vars.$font-small;
+  }
 .work {
   &__pannel {
     display: flex;
@@ -10,12 +13,19 @@
     color: white;
     background-color: vars.$white-color-trans;
     border-radius: vars.$btn-radius;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
   &__img {
     width: 100%;
     margin: auto;
     padding: 1em;
     text-align: center;
+    @media (min-width: 768px) {
+      max-width: 400px;
+    }
   }
   &__img--src {
     width: 100%;
@@ -23,6 +33,7 @@
   &__description {
     display: flex;
     flex-direction: column;
+    padding: 1em;
   }
   &__title {
     font-size: 1.5em;
@@ -32,6 +43,9 @@
   &__context {
     font-size: vars.$font-small;
     margin-bottom: 0.7em;
+    @media (min-width: 768px) {
+      margin-bottom: 1.8em;
+    }
   }
   &__content {
     line-height: 1.8em;
@@ -41,6 +55,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    @media (min-width: 768px) {
+      margin: 1em 0;
+    }
   }
   &__tool--img {
     height: 50px;
