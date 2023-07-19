@@ -23,24 +23,22 @@ function Home() {
         <div className="section__blocks">
           <div className="section__block--left">
             <article>
-              <h1 className="section__title">
+              <span className="section__hello">
                 Hello World_
-              </h1>
+              </span>
               <h2 className="section__my-name">
                 Séverine Cuenot<br />
                 <span>Développeuse Web</span>
               </h2>
               <div className="timer">
                 <Link to="/contact" className="timer__link">
-                  <span>&#9654; Disponible</span> à partir du
-                  <span>
-                    {' '} {/* add a space */}
-                    {dateState.toLocaleDateString('fr-FR', {
-                      day: 'numeric',
-                      month: 'short',
-                      year: 'numeric',
-                    })}.
-                  </span>
+                  &#9654; Disponible à partir du
+                  {' '} {/* add a space */}
+                  {dateState.toLocaleDateString('fr-FR', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric',
+                  })}.
                 </Link>
               </div>
               <p className="section__text">
@@ -53,7 +51,7 @@ function Home() {
                 je cherche désormais à consolider cette certitude que le Front,
                 c’est encore mieux que le CSS tout seul.
               </p>
-              <Button label="En savoir plus_" type="button" />
+              <Link to="/parcours"><Button label="En savoir plus_" type="button" /></Link>
               <div className="section__logo">
                 <a href="https://github.com/severine-cuenot" target="_blank" rel="noreferrer"><img src="../../img/github-mark-white.png" alt="Aller vers mon profil Github" /></a>
                 <a href="https://www.linkedin.com/in/severine-cuenot/" target="_blank" rel="noreferrer"><img src="../../img/linkedin2.png" alt="Aller vers mon profil Linkedin" /></a>
