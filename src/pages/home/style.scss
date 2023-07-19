@@ -94,7 +94,7 @@
 }
 
 .timer__link:hover {
-  display: none;
+  color: vars.$yellow;
 }
 
 .timer {
@@ -105,23 +105,5 @@
   cursor: pointer;
   padding-bottom: 1em;
 }
-// Animation by qpi65
-// .timer span {
-//   transition: .5s linear;
-// }
-// .timer:hover span:nth-child(1){
-//   margin-right: 0.5em;
-// }
-// .timer:hover span:nth-child(1):after{
-//   content: "";
-// }
-// .timer:hover span:nth-child(2){
-//   margin-left: 0.5em;
-// }
-// .timer:hover span{
-//   color: #fff;
-//   text-shadow: 0 0 10px #fff,
-//                0 0 20px #fff, 
-//                0 0 40px #fff;
-// }
+
 

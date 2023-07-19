@@ -38,6 +38,12 @@
       width: 50%;
       margin: 1.4em auto;
       text-align: center;
+      @media (min-width: 768px) {
+        float: left;
+        padding-right: 2em;
+        padding-bottom: 0.5em;
+        width: 20%;
+      }
     }
 
     &__box--avatar-img {
