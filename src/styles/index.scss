@@ -3,13 +3,14 @@
 
   // import your own font
   @font-face {
-    font-family: 'Inconsolata';
-    src: url('../assets/fonts/Inconsolata-Regular.ttf');
+    font-family: 'dogica';
+    src: url('../assets/fonts/dogica.ttf');
   }
 
   body {
     font-family: vars.$font-family;
     font-size: 1em;
+    font-weight: 300;
     color: white;
     background: #c31432;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
