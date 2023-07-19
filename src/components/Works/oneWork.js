@@ -4,7 +4,7 @@ import Button from '../Button';
 
 function OneWork({ work }) {
   const {
-    title, context, img, text, tools, link,
+    title, context, img, text, tools, link, role,
   } = work;
 
   return (
@@ -15,6 +15,7 @@ function OneWork({ work }) {
       <div className="work__description">
         <div className="work__title">{title}</div>
         <div className="work__context">{context}</div>
+        <div className="work__role">Casquette(s)&nbsp;: {role}</div>
         <div className="work__content">{text}</div>
         <h2>Outils utilisés&nbsp;:</h2>
         <div className="work__tools">{tools}</div>
@@ -35,6 +36,7 @@ OneWork.propTypes = {
     text: PropTypes.string.isRequired,
     tools: PropTypes.array.isRequired,
     link: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
   }).isRequired,
 };
 
