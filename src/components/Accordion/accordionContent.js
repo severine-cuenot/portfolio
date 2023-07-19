@@ -24,6 +24,7 @@ function AccordionContent({ experience, onToggle, active }) {
         <div className="accordion__date">{date}</div>
         <div className="accordion__job">{job}</div>
         <div className="accordion__content" dangerouslySetInnerHTML={createMarkup()} />
+        <div className="content__skills--title">Outils utilisés</div>
         <div className="accordion__tools">{tools}</div>
       </div>
     </li>
