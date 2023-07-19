@@ -23,9 +23,9 @@ function Home() {
         <div className="section__blocks">
           <div className="section__block--left">
             <article>
-              <span className="section__hello">
-                Hello World_
-              </span>
+              <div className="hello__typing">
+                <div className="hello__text">Hello World.</div>
+              </div>
               <h2 className="section__my-name">
                 Séverine Cuenot<br />
                 <span>Développeuse Web</span>
