@@ -1,9 +1,9 @@
 @use '../../styles/vars';
 
-h2 {
-    padding-top: 1em;
-    font-size: vars.$font-small;
-  }
+.section__realisations {
+  width: 100%;
+  padding: 0;
+}
 .work {
   &__pannel {
     display: flex;
@@ -13,6 +13,7 @@ h2 {
     color: white;
     background-color: vars.$white-color-trans;
     border-radius: vars.$btn-radius;
+    
     @media (min-width: 768px) {
       flex-direction: row;
       align-items: center;
@@ -47,9 +48,17 @@ h2 {
       margin-bottom: 1.8em;
     }
   }
+  &__role {
+    font-weight: 400;
+    margin-bottom: 0.3em;
+  }
   &__content {
     line-height: 1.8em;
     margin-bottom: 0.3em;
+  }
+  &__tools--title {
+    padding-top: 1em;
+    font-size: vars.$font-small;
   }
   &__tools {
     display: flex;

@@ -3,6 +3,9 @@
 // ACCORDION
 .accordion_list {
   margin-top: 2em;
+  // @media (min-width: 1024px) {
+  //   max-width: 50%;
+  // }
 }
 
 // ACCORDION CONTENT
@@ -19,6 +22,7 @@
   }
   &__date {
     font-size: vars.$font-small;
+    margin-bottom: 0.8em;
   }
   &__job {
     font-weight: bold;
@@ -61,7 +65,7 @@
     align-content: stretch;
   }
   &__skills--title {
-    text-transform: uppercase;
+    font-weight: 400;
     margin: 1em 0;
   }
   &__skills--items img{
