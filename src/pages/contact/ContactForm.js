@@ -1,15 +1,9 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-console */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-// import { useEffect } from 'react';
-// import { useDispatch } from 'react-redux';
 import { useRef } from 'react';
 
 import emailjs from 'emailjs-com';
-// import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
-// import { sendMessage, changeValue } from '../../actions';
 import './style.scss';
 
 function ContactForm() {
@@ -30,19 +24,6 @@ function ContactForm() {
         },
       );
   };
-  // useEffect(() => {
-  //   dispatch(initSucces());
-  // }, []);
-
-  // // Listen to textarea in case someone is typing
-  // const handleChange = (event) => dispatch(changeValue(event.target.value, 'message'));
-  // // Listen to submit button
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   dispatch(sendMessage());
-  // };
-
-  // const succes = useSelector((state) => state.user.succes);
 
   return (
     <div>

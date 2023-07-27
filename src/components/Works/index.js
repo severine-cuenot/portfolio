@@ -1,5 +1,4 @@
 import works from '../../data/works';
-import Page from '../Page';
 import OneWork from './oneWork';
 
 import './style.scss';
@@ -9,7 +8,7 @@ function Works() {
   const intArray = works.filter((int) => int.type === 'Int');
   const divArray = works.filter((divers) => divers.type === 'Divers');
   return (
-    <Page>
+    <div>
       <section>
         <h2 className="section__subtitle">Développement</h2>
         <ul className="works_list">
@@ -43,7 +42,7 @@ function Works() {
           ))}
         </ul>
       </section>
-    </Page>
+    </div>
   );
 }
 
