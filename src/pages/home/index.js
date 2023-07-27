@@ -43,13 +43,18 @@ function Home() {
               </div>
               <p className="section__text">
                 Illustratrice & secrétaire de rédaction web en reconversion professionnelle,
-                Séverine aimerait bien trouver un poste dans une entreprise dynamique et bienveillante afin de consolider ses acquis et, surtout, d'apprendre encore et toujours de nouvelles choses.
+                Séverine aimerait bien trouver un poste dans une entreprise dynamique
+                et bienveillante afin de consolider ses acquis et, surtout,
+                d'apprendre encore et toujours de nouvelles choses.
               </p>
               <p className="section__text">
-                Après des années d'intégration web en autodidacte et une formation intensive de 5 mois en Fullstack JS, elle souhaite continuer à faire des belles choses en Front, ayant une appétance particulière pour React.js et le CSS (surtout le CSS &hearts;).  
+                Après des années d'intégration web en autodidacte et une formation intensive
+                de 5&nbsp;mois en Fullstack JS, elle souhaite continuer à faire des
+                belles choses en Front, ayant une appétance particulière pour
+                React.js et le CSS (surtout le CSS &hearts;).
               </p>
               <p className="section__text">
-                (et aussi pour qu'elle sache rendre ce site vachement plus attrayant et badass).  
+                (et aussi pour qu'elle sache rendre ce site vachement plus attrayant et badass).
               </p>
               <Link to="/parcours"><Button label="En savoir plus_" type="button" /></Link>
               <div className="section__logo">

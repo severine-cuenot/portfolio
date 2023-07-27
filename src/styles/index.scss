@@ -34,6 +34,11 @@
       margin-bottom: 1.2em;
     }
 
+    &__subtitle {
+      font-size: vars.$font-medium;
+      margin-bottom: 1.2em;
+    }
+
     &__box--avatar {
       width: 50%;
       margin: 1.4em auto;
