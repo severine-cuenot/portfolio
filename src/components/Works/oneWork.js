@@ -4,19 +4,20 @@ import Button from '../Button';
 
 function OneWork({ work }) {
   const {
-    title, context, img, text, tools, link,
+    title, context, img, text, tools, link, role,
   } = work;
 
   return (
     <li className="work__pannel">
       <div className="work__img">
-        <img src={`../../img/${img}`} alt={`${title}`} className="work__img--src" />
+        <img src={`../../img/${img}`} alt={`${title}`} title={`${title}`} className="work__img--src" />
       </div>
       <div className="work__description">
         <div className="work__title">{title}</div>
         <div className="work__context">{context}</div>
+        <div className="work__role">Casquette(s)&nbsp;: {role}</div>
         <div className="work__content">{text}</div>
-        <h2>Outils utilisés&nbsp;:</h2>
+        <p className="work__tools--title">Outils utilisés&nbsp;:</p>
         <div className="work__tools">{tools}</div>
         <div className="work__link">
           <a href={link}><Button label="Voir la créa_" />
@@ -35,6 +36,7 @@ OneWork.propTypes = {
     text: PropTypes.string.isRequired,
     tools: PropTypes.array.isRequired,
     link: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
   }).isRequired,
 };
 

@@ -37,6 +37,10 @@ textarea {
     width: 70%;
     max-width: 600px;
   }
+  @media (min-width: 1024px) {
+    width: 75%;
+    margin: 0;
+  }
 
   &__warning {
     padding: 1em;

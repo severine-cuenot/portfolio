@@ -9,7 +9,7 @@
 
   body {
     font-family: vars.$font-family;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 300;
     color: white;
     background: #c31432;  /* fallback for old browsers */
@@ -24,7 +24,6 @@
   // SECTIONS
   .section {
     padding: 5em 2em 2em;
-    
 
     &__header {
       margin-bottom: 1.5em;
@@ -33,6 +32,39 @@
     &__title {
       font-size: vars.$font-big;
       margin-bottom: 1.2em;
+    }
+
+    &__subtitle {
+      font-size: vars.$font-medium;
+      margin-bottom: 1.2em;
+    }
+
+    &__box--avatar {
+      width: 50%;
+      margin: 1.4em auto;
+      text-align: center;
+      @media (min-width: 768px) {
+        float: left;
+        padding-right: 2em;
+        padding-bottom: 0.5em;
+        width: 20%;
+      }
+    }
+
+    &__box--avatar-img {
+      width: 100%;
+      border-radius: vars.$btn-radius;
+    }
+
+    &__list {
+      margin-left: 1em;
+      line-height: 1.8em;
+      list-style: inside;
+      list-style-type: square;
+    }
+
+    &__list li {
+      margin-bottom : 1em;
     }
   }
 

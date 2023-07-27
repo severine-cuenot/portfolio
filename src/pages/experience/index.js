@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import Page from '../../components/Page';
 import Accordion from '../../components/Accordion';
+import Button from '../../components/Button';
 
 function Experience() {
   return (
@@ -14,6 +16,7 @@ function Experience() {
           j'ai travaillé.
         </p>
         <Accordion />
+        <Link to="/realisations"><Button label="Voir mes réalisations_" type="button" /></Link>
       </section>
     </Page>
   );

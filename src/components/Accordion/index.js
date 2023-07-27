@@ -16,6 +16,7 @@ function Accordion() {
   };
 
   return (
+    // <div className="container">
     <ul className="accordion_list">
       {experiences.map((experience) => (
         <AccordionContent
@@ -26,6 +27,7 @@ function Accordion() {
         />
       ))}
     </ul>
+    // </div>
   );
 }
 
