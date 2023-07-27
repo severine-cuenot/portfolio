@@ -13,7 +13,7 @@ function AppFooter() {
         </p>
       </div>
       <div className="footer__copyright">
-        <p>&copy; Séverine Cuenot {year}</p>
+        <p>Tous droits réservés &copy; Séverine Cuenot {year}</p>
       </div>
     </footer>
   );
