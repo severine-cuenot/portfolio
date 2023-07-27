@@ -12,7 +12,7 @@ export default [
   },
   {
     id: 1,
-    title: 'Illustrations',
+    title: 'Portfolio Illustrations',
     type: 'Int',
     context: 'Portfolio personnel',
     role: 'Intégratrice',
@@ -52,6 +52,17 @@ export default [
     img: 'segment2.png',
     text: 'blablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbi',
     tools: [<img src="../../img/blueshift.png" alt="Blueshift" className="work__tool--img" />],
+    link: 'signature.png',
+  },
+  {
+    id: 5,
+    title: 'Portfolio Dev',
+    type: 'Dev',
+    context: 'Portfolio personnel',
+    role: 'Dieue :)',
+    img: 'portfolio.png',
+    text: 'Site pensé en mobile first avec React.JS. Le tout premier que je monte de A à Z en solo, le tout premier aussi depuis ma formation. Très bon exercice qui m\'a permis de faire le point sur ce que j\'étais désormais en capacité de faire. J\'ai particulièrement hâte de grimper en compétence pour l\'améliorer ! (et puis il fallait bien que je m\'amuse à metre une petite recursion quelque part :D)',
+    tools: [<img src="../../img/react.png" alt="React.js" className="work__tool--img" />, <img src="../../img/react_redux.png" alt="React-Redux" className="work__tool--img" />, <img src="../../img/react-router.png" alt="React Router DOM" className="work__tool--img" />, <img src="../../img/sass.png" alt="Scss" className="work__tool--img" />, <img src="../../img/emailjs.png" alt="EmailJS" className="work__tool--img" />, <img src="../../img/github-mark-white.png" alt="Github" className="work__tool--img" />],
     link: 'signature.png',
   },
 ];
