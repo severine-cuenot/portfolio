@@ -2,6 +2,7 @@ export default [
   {
     id: 0,
     title: 'Saevoir',
+    type: 'Dev',
     context: 'Ecole O\'clock, projet présenté pour le Titre Professionnel',
     role: 'GitMaster côté Front, Référente accessibilité, développement Front',
     img: 'saevoir.png',
@@ -12,6 +13,7 @@ export default [
   {
     id: 1,
     title: 'Illustrations',
+    type: 'Int',
     context: 'Portfolio personnel',
     role: 'Intégratrice',
     img: 'nine_site.png',
@@ -22,6 +24,7 @@ export default [
   {
     id: 2,
     title: 'Newsletters & Mailings',
+    type: 'Int',
     context: 'Publications Agora',
     role: 'Intégratrice',
     img: 'alerte.png',
@@ -32,6 +35,7 @@ export default [
   {
     id: 3,
     title: 'Bons de commande',
+    type: 'Int',
     context: 'Publications Agora',
     role: 'Intégratrice',
     img: 'bdc.png',
@@ -42,6 +46,7 @@ export default [
   {
     id: 4,
     title: 'Segmentation',
+    type: 'Divers',
     context: 'Publications Agora',
     role: 'Référente segmentations clients',
     img: 'segment2.png',
