@@ -8,7 +8,7 @@ export default [
     img: 'saevoir.png',
     text: '"Saevoir souhaite créer du lien social (\'se voir\') ou révéler de nouvelles vocations grâce à la mise en valeur des connaissances de chacun-e (\'savoir\' !)". Ce site est le joli projet d\'une équipe de 5 personnes (deux backeux et trois fronteux) ayant à coeur les questions d\'accessibilité et d\'inclusivité, bien que cela n\'ait pas été au programme de notre formation. Nous avons tout fait dans le petit mois qui nous était impartit pour tenir cette ligne, apprenant sur le tas. Le site n\'est plus maintenu actuellement, mais sa vidéo de présentation réalisée dans le cadre de la validation de la formation est disponible en cliquant ici :',
     tools: [<img src="../../img/react.png" alt="React.js" className="work__tool--img" />, <img src="../../img/react_redux.png" alt="React-Redux" className="work__tool--img" />, <img src="../../img/react-router.png" alt="React Router DOM" className="work__tool--img" />, <img src="../../img/sass.png" alt="Scss" className="work__tool--img" />, <img src="../../img/nodemailer.png" alt="Nodemailer" className="work__tool--img" />, <img src="../../img/axios.png" alt="Axios" className="work__tool--img" />, <img src="../../img/postgresql.png" alt="Postgresql" className="work__tool--img" />, <img src="../../img/sqitch.png" alt="Sqitch" className="work__tool--img" />, <img src="../../img/jwt.png" alt="JWT" className="work__tool--img" />, <img src="../../img/postman.png" alt="Postman" className="work__tool--img" />, <img src="../../img/github-mark-white.png" alt="Github" className="work__tool--img" />],
-    link: 'https://drive.google.com/file/d/1KrQZVzHvCG3OJlOZF9GYA4pwrDh-cR7W/view?usp=drive_link',
+    link: 'video',
     label: 'Voir la vidéo_',
   },
   {
