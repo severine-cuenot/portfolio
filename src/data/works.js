@@ -6,9 +6,10 @@ export default [
     context: 'Ecole O\'clock, projet présenté pour le Titre Professionnel',
     role: 'GitMaster côté Front, Référente accessibilité, développement Front',
     img: 'saevoir.png',
-    text: 'Saevoir souhaite créer du lien social (\'se voir\') ou révéler de nouvelles vocations grâce à la mise en valeur des connaissances de chacun et chacune (\'savoir\' !). L\'idée est venue de proposer une plateforme valorisant l\'expérience de tout un chacun.',
+    text: '"Saevoir souhaite créer du lien social (\'se voir\') ou révéler de nouvelles vocations grâce à la mise en valeur des connaissances de chacun-e (\'savoir\' !)". Ce site est le joli projet d\'une équipe de 5 personnes (deux backeux et trois fronteux) ayant à coeur les questions d\'accessibilité et d\'inclusivité, bien que cela n\'ait pas été au programme de notre formation. Nous avons tout fait dans le petit mois qui nous était impartit pour tenir cette ligne, apprenant sur le tas. Le site n\'est plus maintenu actuellement, mais sa vidéo de présentation réalisée dans le cadre de la validation de la formation est disponible en cliquant ici :',
     tools: [<img src="../../img/react.png" alt="React.js" className="work__tool--img" />, <img src="../../img/react_redux.png" alt="React-Redux" className="work__tool--img" />, <img src="../../img/react-router.png" alt="React Router DOM" className="work__tool--img" />, <img src="../../img/sass.png" alt="Scss" className="work__tool--img" />, <img src="../../img/nodemailer.png" alt="Nodemailer" className="work__tool--img" />, <img src="../../img/axios.png" alt="Axios" className="work__tool--img" />, <img src="../../img/postgresql.png" alt="Postgresql" className="work__tool--img" />, <img src="../../img/sqitch.png" alt="Sqitch" className="work__tool--img" />, <img src="../../img/jwt.png" alt="JWT" className="work__tool--img" />, <img src="../../img/postman.png" alt="Postman" className="work__tool--img" />, <img src="../../img/github-mark-white.png" alt="Github" className="work__tool--img" />],
-    link: 'signature.png',
+    link: 'apo.mp4',
+    label: 'Voir la vidéo_',
   },
   {
     id: 1,
@@ -19,7 +20,8 @@ export default [
     img: 'nine_site.png',
     text: 'blablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbi',
     tools: [<img src="../../img/html5.png" alt="HTML5" className="work__tool--img" />, <img src="../../img/css3.png" alt="CSS3" className="work__tool--img" />],
-    link: 'signature.png',
+    link: 'http://nineinjections.fr/',
+    label: 'Voir le site_',
   },
   {
     id: 2,
@@ -30,7 +32,8 @@ export default [
     img: 'alerte.png',
     text: 'blablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbi',
     tools: [<img src="../../img/html5.png" alt="HTML5" className="work__tool--img" />, <img src="../../img/css3.png" alt="CSS3" className="work__tool--img" />],
-    link: 'signature.png',
+    link: '',
+    label: '',
   },
   {
     id: 3,
@@ -41,7 +44,8 @@ export default [
     img: 'bdc.png',
     text: 'blablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbi',
     tools: [<img src="../../img/html5.png" alt="HTML5" className="work__tool--img" />, <img src="../../img/css3.png" alt="CSS3" className="work__tool--img" />],
-    link: 'signature.png',
+    link: '',
+    label: '',
   },
   {
     id: 4,
@@ -52,7 +56,8 @@ export default [
     img: 'segment2.png',
     text: 'blablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbiblablabla blibliblbi',
     tools: [<img src="../../img/blueshift.png" alt="Blueshift" className="work__tool--img" />],
-    link: 'signature.png',
+    link: '',
+    label: '',
   },
   {
     id: 5,
@@ -63,6 +68,7 @@ export default [
     img: 'portfolio.png',
     text: 'Site pensé en mobile first avec React.JS. Le tout premier que je monte de A à Z en solo, le tout premier aussi depuis ma formation. Très bon exercice qui m\'a permis de faire le point sur ce que j\'étais désormais en capacité de faire. J\'ai particulièrement hâte de grimper en compétence pour l\'améliorer ! (et puis il fallait bien que je m\'amuse à metre une petite recursion quelque part :D)',
     tools: [<img src="../../img/react.png" alt="React.js" className="work__tool--img" />, <img src="../../img/react_redux.png" alt="React-Redux" className="work__tool--img" />, <img src="../../img/react-router.png" alt="React Router DOM" className="work__tool--img" />, <img src="../../img/sass.png" alt="Scss" className="work__tool--img" />, <img src="../../img/emailjs.png" alt="EmailJS" className="work__tool--img" />, <img src="../../img/github-mark-white.png" alt="Github" className="work__tool--img" />],
-    link: 'signature.png',
+    link: '',
+    label: '',
   },
 ];
