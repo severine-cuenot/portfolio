@@ -18,12 +18,22 @@ function Contact() {
       <section className="section">
         <header className="section__header">
           <h1 className="section__title">Contact</h1>
-          <p className="contact__text">
-            Si vous souhaitez me contacter, vous pouvez
-            m'écrire à <a href={emailLink} className="link">{emailText}</a> ou bien remplir le formulaire ci-dessous.
-          </p>
         </header>
-        <ContactForm />
+        <p className="contact__text">
+          Si vous souhaitez me contacter, vous pouvez
+          m'écrire à <a href={emailLink} className="link">{emailText}</a> ou bien remplir le formulaire ci-dessous.
+        </p>
+
+        <div className="section__blocks">
+          <div className="section__block--left">
+            <ContactForm />
+          </div>
+          <div className="contact__block--right">
+            <aside>
+              <img src="../../img/nine_liberty.png" className="contact__block--right--img" alt="Nine" />
+            </aside>
+          </div>
+        </div>
       </section>
     </Page>
   );
