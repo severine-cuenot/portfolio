@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import works from '../../data/works';
 import OneWork from './oneWork';
+import Button from '../Button';
 
 import './style.scss';
 
@@ -42,6 +44,7 @@ function Works() {
           ))}
         </ul>
       </section> */}
+      <Link to="/contact"><Button label="Me contacter_" type="button" /></Link>
     </div>
   );
 }
