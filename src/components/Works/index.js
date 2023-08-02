@@ -6,7 +6,7 @@ import './style.scss';
 function Works() {
   const devArray = works.filter((dev) => dev.type === 'Dev');
   const intArray = works.filter((int) => int.type === 'Int');
-  const divArray = works.filter((divers) => divers.type === 'Divers');
+  // const divArray = works.filter((divers) => divers.type === 'Divers');
   return (
     <div>
       <section>
@@ -31,7 +31,7 @@ function Works() {
           ))}
         </ul>
       </section>
-      <section>
+      {/* <section>
         <h2 className="section__subtitle">Divers</h2>
         <ul className="works_list">
           {divArray.map((divers) => (
@@ -41,7 +41,7 @@ function Works() {
             />
           ))}
         </ul>
-      </section>
+      </section> */}
     </div>
   );
 }
