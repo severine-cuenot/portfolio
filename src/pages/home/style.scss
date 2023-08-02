@@ -78,6 +78,29 @@
     margin-top: 1.6em;
     padding-right: 1.2em;
   }
+
+  &__testi {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    justify-content:left;
+  }
+
+  &__testi-content {
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.8em;
+    background-color: vars.$white-color-trans;
+    border-radius: vars.$btn-radius;
+    font-size: vars.$font-small;
+    @media (min-width: 768px) {
+      max-width: 30%;
+      margin: 0 1em 1em 0;
+    }
+  }
+  &__testi-text {
+    font-style: italic;
+  }
 }
 
 .section__my-name span {
