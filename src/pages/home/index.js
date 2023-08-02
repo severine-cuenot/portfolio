@@ -69,38 +69,6 @@ function Home() {
             </aside>
           </div>
         </div>
-        <div className="section__testi">
-          <div className="section__testi-content">
-            <p className="section__testi-text">
-              "J’ai eu le plaisir de travailler avec Séverine entre 2010 et 2018.
-              Pendant ces années, j’ai pu faire l’expérience de ses
-              immenses qualités professionnelles [...] et ai particulièrement apprécié son envie
-              d’apprendre, sa grande capacité de travail, sa flexibilité, son sérieux,
-              sa motivation et son sens de l’organisations."
-            </p>
-            <p className="section__testi-name">
-              Cécile C., Rédactrice en chef aux Publications Agora jusqu’en 2018
-            </p>
-          </div>
-          <div className="section__testi-content">
-            <p className="section__testi-text">
-              "Rigoureuse, flexible, dotée d'un sens avéré des responsabilités et
-              appréciée par l'ensemble de l'équipe, Séverine est une salariée compétente
-              et indispensable au bon fonctionnement de notre structure."
-            </p>
-            <p className="section__testi-name">
-              Jeanne-Marie S., Directrice Marketing aux Publications Agora jusqu’en 2019
-            </p>
-          </div>
-          <div className="section__testi-content">
-            <p className="section__testi-text">
-              "Reco de LCL"
-            </p>
-            <p className="section__testi-name">
-              Lay-Chan L., Directrice Marketing aux Publications Agora
-            </p>
-          </div>
-        </div>
       </section>
     </Page>
   );
