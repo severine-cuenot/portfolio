@@ -55,20 +55,42 @@ textarea {
   }
 }
 .contact {
+  &__blocks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  &__block--left {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+  }
   &__block--right {
     width: 100%; 
     @media (min-width: 768px) {
-      width: 30%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
   }
   &__text {
     margin-bottom: 1.5em;
   }
+  &__img-container {
+    max-width: 80%;
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
+  display: flex;
+  justify-content: center;
+  }
   &__block--right--img {
     width: 80%; 
     @media (min-width: 768px) {
-      width: 60%;
-      min-width: 250px;
+      width: 100%;
+      // min-width: 250px;
     }
   }
 }

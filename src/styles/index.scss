@@ -25,6 +25,12 @@
   .section {
     padding: 5em 2em 2em;
 
+    &__blocks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     &__header {
       margin-bottom: 1.5em;
     }
