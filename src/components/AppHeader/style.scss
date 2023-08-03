@@ -7,14 +7,6 @@
   flex-direction: column;
 }
 
-// .toggle__block {
-//   @media (max-width: 768px) {
-//   display: flex;
-//   align-items: center;
-//   }
-// }
-
-
 .main-nav {
   display: block;
   margin: 1em 1.4em 0 1em;
@@ -96,15 +88,15 @@
     display: none;
   }
 
-  &__left-part {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+  // &__left-part {
+  //   display: flex;
+  //   // flex-direction: row;
+  //   align-items: center;
+  // }
 
-  &__toggle {
-    margin-left: 0.5em;
-  }
+  // &__toggle-container {
+  //   margin-left: 0.5em;
+  // }
 
   // Logo signature
   &__logo {
@@ -135,3 +127,88 @@
   }
 
 }
+
+//====== CSS FOR DESKTOP ======//
+
+// // Toggle specific styles
+// .toggle {
+//   align-items: center;
+//   border-radius: 100px;
+//   display: flex;
+//   font-weight: 400;
+//   margin-bottom: 1em;
+
+//   &:last-of-type {
+//     margin: 0;
+//   }
+// }
+
+// // Since we can't style the checkbox directly, we "hide" it so we can draw the toggle.
+// .toggle__input2 {
+//   clip: rect(0 0 0 0);
+//   clip-path: inset(50%);
+//   height: 1px;
+//   overflow: hidden;
+//   position: absolute;
+//   white-space: nowrap;
+//   width: 1px;
+
+//   // This style sets the focus ring. The ":not([disabled])" prevents the focus ring from creating a flash when the element is clicked.
+//   &:not([disabled]):active + .toggle-track2,
+//   &:not([disabled]):focus + .toggle-track2 {
+//     border: 1px solid transparent;
+//     box-shadow: 0px 0px 0px 1px vars.$dark-color;
+//   }
+// }
+
+// .toggle-track2 {
+//   background: vars.$white-color-trans;
+//   border: 1px solid vars.$dark-color;
+//   border-radius: 100px;
+//   cursor: pointer;
+//   display: flex;
+//   height: 2em;
+//   margin-right: 0.8em;
+//   position: relative;
+//   width: 3.8em;
+// }
+
+// .toggle-indicator2 {
+//   align-items: center;
+//   background: vars.$dark-color;
+//   border-radius: 24px;
+//   bottom: 0.19em;
+//   display: flex;
+//   height: 1.5em;
+//   justify-content: center;
+//   left: 0.1em;
+//   outline: solid 2px transparent;
+//   position: absolute;
+//   transition: 0.5s;
+//   width: 1.6em;
+// }
+
+// // The check mark is optional
+// .checkMark2 {
+//   fill: vars.$dark-color-trans;
+//   height: 1.6em;
+//   width: 3.8em;
+//   opacity: 0;
+//   transition: opacity 0.5s ease-in-out;
+// }
+
+// .toggle__input2:checked + .toggle-track2 .toggle-indicator2 {
+//   background: vars.$dark-yellow;
+//   transform: translateX(3.8em - 2em);
+
+//   .checkMark2 {
+//     opacity: 1;
+//     transition: opacity 0.5s ease-in-out;
+//   }
+// }
+
+// @media screen and (-ms-high-contrast: active) {
+//   .toggle-track2 {
+//     border-radius: 0;
+//   }
+// }
