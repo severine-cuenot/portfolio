@@ -1,11 +1,13 @@
 /* eslint-disable react/button-has-type */
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Button from '../Button';
+import Toggle from '../Toggle';
 
 import './style.scss';
 
-function AppHeader() {
+function AppHeader({ handleChangeFont }) {
   const [isExpanded, setExpanded] = useState(false);
   const handleClick = () => {
     setExpanded(!isExpanded);
@@ -15,8 +17,11 @@ function AppHeader() {
     <div>
       <nav className="main-nav" role="navigation" aria-label="Menu de navigation">
         <div className="main-nav__block">
-          <Link to="/" title="retourner à la page d'accueil'"><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></Link>
-          {/* accessible burger menu with the precious help of W3C and Stefany Newman */}
+          <div className="left__part">
+            <Link to="/" title="retourner à la page d'accueil'"><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></Link>
+            <Toggle onClick={handleChangeFont} />
+            {/* accessible burger menu with the precious help of W3C and Stefany Newman */}
+          </div>
           <button
             className="main-nav__burger-button"
             aria-expanded={isExpanded ? 'true' : 'false'}
@@ -41,6 +46,7 @@ function AppHeader() {
       {/* // Navbar for desktop */}
       <nav className="main-nav-desktop" role="navigation" aria-label="Menu de navigation">
         <Link to="/"><img src="../../img/signature.png" alt="retourner à la page d'accueil" className="main-nav-desktop__logo" /></Link>
+        <Toggle onClick={handleChangeFont} />
         <ul className="main-nav-desktop__block">
           <li className="main-nav-desktop__element"><Link to="/">0. Accueil</Link></li>
           <li className="main-nav-desktop__element"><Link to="/parcours">1. Parcours</Link></li>
@@ -54,5 +60,9 @@ function AppHeader() {
     </div>
   );
 }
+
+AppHeader.propTypes = {
+  handleChangeFont: PropTypes.func.isRequired,
+};
 
 export default AppHeader;

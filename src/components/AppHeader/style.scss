@@ -2,6 +2,23 @@
 
 // Menu for mobiles
 
+.left__part{
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    justify-items: left;
+  }
+}
+
+.toggle__block {
+  @media (max-width: 768px) {
+  display: flex;
+  justify-items: left;
+  }
+}
+
+
 .main-nav {
   display: block;
   margin: 1em 1.4em 0 1em;
@@ -17,6 +34,7 @@
   // Logo signature
   &__logo {
     height: 5em;
+    margin-bottom: 0.6em;
   }
 
   // Burger

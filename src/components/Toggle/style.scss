@@ -1,11 +1,6 @@
 @use '../../styles/vars';
 
-//Toggle container
-.toggle__block {
-  margin: 1em;
-  display: flex;
-  justify-content: left;
-}
+
 
 // Toggle specific styles
 .toggle {
@@ -34,12 +29,7 @@
   &:not([disabled]):active + .toggle-track,
   &:not([disabled]):focus + .toggle-track {
     border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px vars.$dark-color;
-  }
-
-  &:disabled + .toggle-track {
-    cursor: not-allowed;
-    opacity: 0.7;
+    box-shadow: 0px 0px 0px 1px vars.$dark-color;
   }
 }
 

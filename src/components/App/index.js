@@ -15,7 +15,6 @@ import NotFound from '../../pages/404';
 // import components
 import AppFooter from '../AppFooter';
 import AppHeader from '../AppHeader';
-import Toggle from '../Toggle';
 
 // import style
 import './styles.scss';
@@ -32,9 +31,8 @@ function App() {
 
   return (
     <div className="app">
-      <div className={isFontChanged ? 'changed-font' : 'default-font'}>
-        <Toggle onClick={handleChangeFont} />
-        <AppHeader />
+      <div className={`app ${isFontChanged ? 'changed-font' : 'default-font'}`}>
+        <AppHeader isFontChanged={isFontChanged} handleChangeFont={handleChangeFont} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/parcours" element={<About />} />
