@@ -1,6 +1,6 @@
 @use '../../styles/vars';
 
-
+// FORM
 label {
   margin-bottom: 0.6em;
 }
@@ -29,6 +29,7 @@ textarea {
 .form {
   width:100%;
   margin: auto;
+  margin-bottom: 1em;
   display: flex;
   flex-direction: column;
   border-radius: vars.$btn-radius;
@@ -54,11 +55,18 @@ textarea {
     flex-direction: column;
   }
 }
+
+// ALL PAGE
 .contact {
   &__blocks {
       display: flex;
+      flex-direction: column;
+      @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      }
     }
   &__block--left {
     width: 100%;
@@ -80,6 +88,7 @@ textarea {
   }
   &__img-container {
     max-width: 80%;
+    margin: auto;
   @media (min-width: 768px) {
     max-width: 100%;
   }
