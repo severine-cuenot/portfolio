@@ -8,7 +8,7 @@ label {
 input {
   border: 1px solid vars.$dark-color-trans;
   border-radius: vars.$btn-radius;
-  font-family: vars.$font-family;
+  font-family: inherit;
   font-size: 1em;
   padding-left: 0.625em;
   padding-top: 0.625em;
@@ -19,7 +19,7 @@ textarea {
   min-height: 3.5em;
   border: 1px solid vars.$dark-color-trans;
   border-radius: vars.$btn-radius;
-  font-family: vars.$font-family;
+  font-family: inherit;
   font-size: 1em;
   padding-left: 0.625em;
   padding-top: 0.625em;
