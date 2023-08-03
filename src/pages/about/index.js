@@ -64,9 +64,9 @@ function About() {
               <p className="section__testi-text">
                 "J’ai eu le plaisir de travailler avec Séverine entre 2010 et 2018.
                 Pendant ces années, j’ai pu faire l’expérience de ses
-                immenses qualités professionnelles [...] et ai particulièrement apprécié son envie
+                immenses qualités professionnelles et ai particulièrement apprécié son envie
                 d’apprendre, sa grande capacité de travail, sa flexibilité, son sérieux,
-                sa motivation et son sens de l’organisations."
+                sa motivation et son sens de l’organisation."
               </p>
               <p className="section__testi-name">
                 Cécile C., Rédactrice en chef aux Publications Agora jusqu’en 2018
@@ -84,10 +84,16 @@ function About() {
             </div>
             <div className="section__testi-content">
               <p className="section__testi-text">
-                "Reco de LCL"
+                "Curieuse, responsable, rigoureuse, très impliquée et naturellement dotée d’un esprit
+                critique, Séverine est un élément moteur qui aime
+                s’investir dans de nouveaux projets. Dotée d’un fort esprit d’équipe, elle a également
+                toujours su travailler en parfaite autonomie et responsabilité tout au long de ses
+                missions. Elle était particulièrement appréciée par ses collègues et sa direction pour son
+                implication, sa disponibilité et son apport quant à la formation/transmission auprès de
+                ses pairs."
               </p>
               <p className="section__testi-name">
-                Lay-Chan L., Directrice Marketing aux Publications Agora
+                Lay-Chan L., Directrice des Opérations & Marketing Tech aux Publications Agora
               </p>
             </div>
           </div>
