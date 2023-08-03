@@ -6,9 +6,13 @@
     font-family: 'dogica';
     src: url('../assets/fonts/dogica.ttf');
   }
+  @font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../assets/fonts/OpenDyslexic3-Regular.ttf')
+  }
 
   body {
-    font-family: vars.$font-family;
+    // font-family: vars.$font-family;
     font-size: 1em;
     font-weight: 300;
     color: white;
@@ -20,6 +24,18 @@
   p {
     line-height: 1.8em;
   }
+
+  /* Styles pour la police par défaut */
+.default-font {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Styles pour la police changée */
+.changed-font {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+
 
   // SECTIONS
   .section {

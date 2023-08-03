@@ -1,7 +1,6 @@
 /* eslint-disable import/no-unresolved */
 // == Import
-// import { useEffect, useState } from 'react';
-// import { useDispatch } from 'react-redux';
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import useScrollTop from '../../hooks/useScrollTop';
 
@@ -10,12 +9,13 @@ import Home from '../../pages/Home';
 import About from '../../pages/About';
 import Experience from '../../pages/Experience';
 import Realisations from '../../pages/realisations';
-import Contact from '../../pages/Contact';
+import Contact from '../../pages/contact';
 import NotFound from '../../pages/404';
 
 // import components
 import AppFooter from '../AppFooter';
 import AppHeader from '../AppHeader';
+import Toggle from '../Toggle';
 
 // import style
 import './styles.scss';
@@ -23,20 +23,28 @@ import './styles.scss';
 // == Composant
 function App() {
   useScrollTop();
-  // const dispatch = useDispatch();
+
+  // Change font
+  const [isFontChanged, setFontChange] = useState(false);
+  const handleChangeFont = () => {
+    setFontChange(!isFontChanged);
+  };
 
   return (
     <div className="app">
-      <AppHeader />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/parcours" element={<About />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/realisations" element={<Realisations />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <AppFooter />
+      <div className={isFontChanged ? 'changed-font' : 'default-font'}>
+        <Toggle onClick={handleChangeFont} />
+        <AppHeader />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/parcours" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/realisations" element={<Realisations />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <AppFooter />
+      </div>
     </div>
   );
 }
