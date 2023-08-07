@@ -52,7 +52,7 @@ function Home() {
                 Après avoir développé mes compétences en intégration web en autodidacte
                 pendant des années, j'ai récemment suivi une formation intensive
                 de 5 mois en Fullstack JS, spécialisation React.js. Désormais, je souhaite
-                poursuivre mon parcours en me concentrant sur le Front-end, car mon amour pour
+                me concentrer sur le Front-end, car mon amour pour
                 tout ce qui est graphique - le CSS en particulier (le CSS, c'est la vie ♥) -
                 est demeuré intact.
               </p>
