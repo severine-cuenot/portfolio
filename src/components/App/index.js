@@ -10,6 +10,7 @@ import About from '../../pages/About';
 import Experience from '../../pages/Experience';
 import Realisations from '../../pages/realisations';
 import Contact from '../../pages/contact';
+import Credits from '../../pages/credits';
 import NotFound from '../../pages/404';
 
 // import components
@@ -39,6 +40,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/credits" element={<Credits />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <AppFooter />
