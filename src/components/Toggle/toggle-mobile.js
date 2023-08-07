@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import './style.scss';
+import './style-mobile.scss';
 
-function Toggle({ onClick }) {
+function ToggleMobile({ onClick }) {
   return (
     <div className="toggle__block">
       <label className="toggle" htmlFor="uniqueID">
@@ -29,8 +29,8 @@ function Toggle({ onClick }) {
   );
 }
 
-Toggle.propTypes = {
+ToggleMobile.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-export default Toggle;
+export default ToggleMobile;

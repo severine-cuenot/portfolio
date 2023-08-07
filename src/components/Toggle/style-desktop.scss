@@ -1,0 +1,86 @@
+@use '../../styles/vars';
+
+// Toggle specific styles
+.toggleDesktop {
+  align-items: center;
+  border-radius: 100px;
+  display: flex;
+  font-weight: 400;
+  margin-bottom: 1em;
+  padding: 0 0.4em;
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+// Since we can't style the checkbox directly, we "hide" it so we can draw the toggle.
+.toggle__inputDesktop {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+  // This style sets the focus ring. The ":not([disabled])" prevents the focus ring from creating a flash when the element is clicked.
+  &:not([disabled]):active + .toggle-trackDesktop,
+  &:not([disabled]):focus + .toggle-trackDesktop {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 1px vars.$dark-color;
+  }
+}
+
+.toggle-trackDesktop{
+  background: vars.$white-color-trans;
+  border: 1px solid vars.$dark-color;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  height: 2em;
+  margin-right: 0.8em;
+  position: relative;
+  width: 3.8em;
+}
+
+.toggle-indicatorDesktop {
+  align-items: center;
+  background: vars.$dark-color;
+  border-radius: 24px;
+  bottom: 0.19em;
+  display: flex;
+  height: 1.5em;
+  justify-content: center;
+  left: 0.1em;
+  outline: solid 2px transparent;
+  position: absolute;
+  transition: 0.5s;
+  width: 1.6em;
+}
+
+// The check mark is optional
+.checkMarkDesktop {
+  fill: vars.$dark-color-trans;
+  height: 1.6em;
+  width: 3.8em;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.toggle__inputDesktop:checked + .toggle-trackDesktop .toggle-indicatorDesktop {
+  background: vars.$dark-yellow;
+  transform: translateX(3.8em - 2em);
+
+  .checkMarkDesktop {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .toggle-trackDesktop {
+    border-radius: 0;
+  }
+}
+

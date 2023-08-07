@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Button from '../Button';
-import Toggle from '../Toggle';
+import ToggleMobile from '../Toggle/toggle-mobile';
+import ToggleDesktop from '../Toggle/toggle-desktop';
 
 import './style.scss';
 // import ToggleDesktop from '../Toggle/toggle-desktop';
@@ -20,7 +21,7 @@ function AppHeader({ handleChangeFont }) {
         <div className="main-nav__block">
           <div className="left__part">
             <Link to="/" title="retourner à la page d'accueil'"><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></Link>
-            <Toggle onClick={handleChangeFont} />
+            <ToggleMobile onClick={handleChangeFont} />
             {/* accessible burger menu with the precious help of W3C and Stefany Newman */}
           </div>
           <button
@@ -49,6 +50,7 @@ function AppHeader({ handleChangeFont }) {
       <nav className="main-nav-desktop" role="navigation" aria-label="Menu de navigation">
         {/* <div className="main-nav-desktop__left-part"> */}
         <Link to="/"><img src="../../img/signature.png" alt="retourner à la page d'accueil" className="main-nav-desktop__logo" /></Link>
+        <ToggleDesktop onClick={handleChangeFont} className="main-nav-desktopToggle" />
         {/* </div> */}
         <ul className="main-nav-desktop__block">
           <li className="main-nav-desktop__element"><Link to="/">0. Accueil</Link></li>
@@ -58,7 +60,6 @@ function AppHeader({ handleChangeFont }) {
           <li className="main-nav-desktop__element"><Link to="/contact">4. Contact</Link></li>
           <li><a href="../../pdf/severine_cuenot_dev_cv.pdf" target="_blank"><Button label="5. Télécharger mon CV" className="button__CV" type="button" /></a></li>
         </ul>
-        <Toggle onClick={handleChangeFont} />
       </nav>
 
     </div>
