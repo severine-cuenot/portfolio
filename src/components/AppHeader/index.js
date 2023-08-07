@@ -46,12 +46,9 @@ function AppHeader({ handleChangeFont }) {
         </ul>
       </nav>
       {/* // Navbar for desktop */}
-      {/* <Toggle onClick={handleChangeFont} /> */}
       <nav className="main-nav-desktop" role="navigation" aria-label="Menu de navigation">
-        {/* <div className="main-nav-desktop__left-part"> */}
         <Link to="/"><img src="../../img/signature.png" alt="retourner à la page d'accueil" className="main-nav-desktop__logo" /></Link>
         <ToggleDesktop onClick={handleChangeFont} className="main-nav-desktopToggle" />
-        {/* </div> */}
         <ul className="main-nav-desktop__block">
           <li className="main-nav-desktop__element"><Link to="/">0. Accueil</Link></li>
           <li className="main-nav-desktop__element"><Link to="/parcours">1. Parcours</Link></li>
