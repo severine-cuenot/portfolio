@@ -93,6 +93,12 @@
     height: 4em;
   }
 
+  &__left-part {
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+  }
+
   &__block {
     display: flex;
   }
