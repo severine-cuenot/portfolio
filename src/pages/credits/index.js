@@ -17,6 +17,8 @@ function About() {
           <p className="section__text">&#9825; Le menu "burger" en version mobile est accessible, grâce à l'aide précieuse de <a href="https://www.w3.org/" target="_blank" rel="noreferrer" className="link">W3C</a> et <a href="https://codepen.io/Stefany93/post/good-hamburger-navigation" target="_blank" rel="noreferrer" className="link">Stefany Newman</a>.</p>
           <p className="section__text">&#9825; La font utilisée pour la version dyslexique-friendly du site s'appelle OpenDyslexic et a été fournie avec bienveillance par <a href="https://opendyslexic.org/" target="_blank" rel="noreferrer" className="link">Abbie Gonzalez</a>.
           </p>
+          <p className="section__text">&#9825; Composition dynamique des e-mails pour éviter les spams gentiment expliquée par <a href="https://support.safebrands.com/proteger-son-adresse-email-contre-les-spams-sur-le-web/" target="_blank" rel="noreferrer" className="link">SafeBrands</a>.
+          </p>
           <p className="section__text">&#9825; Un immense merci à mes bêta-testeurses qui se sont cramées les yeux sur ce site :D.
           </p>
         </div>
