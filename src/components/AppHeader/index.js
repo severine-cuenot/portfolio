@@ -1,7 +1,6 @@
 /* eslint-disable react/button-has-type */
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-<<<<<<< HEAD
 import PropTypes from 'prop-types';
 import Button from '../Button';
 import ToggleMobile from '../Toggle/toggle-mobile';
@@ -16,32 +15,15 @@ function AppHeader({ handleChangeFont }) {
     setExpanded(!isExpanded);
   };
 
-=======
-import Button from '../Button';
-
-import './style.scss';
-
-function AppHeader() {
-  const [isExpanded, setExpanded] = useState(false);
-  const handleClick = () => {
-    setExpanded(!isExpanded);
-  };
-
->>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   return (
     <div>
       <nav className="main-nav" role="navigation" aria-label="Menu de navigation">
         <div className="main-nav__block">
-<<<<<<< HEAD
           <div className="left__part">
             <Link to="/" title="retourner à la page d'accueil'"><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></Link>
             <ToggleMobile onClick={handleChangeFont} />
             {/* accessible burger menu with the precious help of W3C and Stefany Newman */}
           </div>
-=======
-          <Link to="/" title="retourner à la page d'accueil'"><img src="../../img/signature.png" alt="retourner à la page d'accueil'" className="main-nav__logo" /></Link>
-          {/* accessible burger menu with the precious help of W3C and Stefany Newman */}
->>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
           <button
             className="main-nav__burger-button"
             aria-expanded={isExpanded ? 'true' : 'false'}
@@ -66,10 +48,7 @@ function AppHeader() {
       {/* // Navbar for desktop */}
       <nav className="main-nav-desktop" role="navigation" aria-label="Menu de navigation">
         <Link to="/"><img src="../../img/signature.png" alt="retourner à la page d'accueil" className="main-nav-desktop__logo" /></Link>
-<<<<<<< HEAD
         <ToggleDesktop onClick={handleChangeFont} className="main-nav-desktopToggle" />
-=======
->>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
         <ul className="main-nav-desktop__block">
           <li className="main-nav-desktop__element"><Link to="/">0. Accueil</Link></li>
           <li className="main-nav-desktop__element"><Link to="/parcours">1. Parcours</Link></li>
