@@ -1,6 +1,10 @@
 @use '../../styles/vars';
 
+<<<<<<< HEAD
 // FORM
+=======
+
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
 label {
   margin-bottom: 0.6em;
 }
@@ -8,7 +12,11 @@ label {
 input {
   border: 1px solid vars.$dark-color-trans;
   border-radius: vars.$btn-radius;
+<<<<<<< HEAD
   font-family: inherit;
+=======
+  font-family: vars.$font-family;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   font-size: 1em;
   padding-left: 0.625em;
   padding-top: 0.625em;
@@ -19,7 +27,11 @@ textarea {
   min-height: 3.5em;
   border: 1px solid vars.$dark-color-trans;
   border-radius: vars.$btn-radius;
+<<<<<<< HEAD
   font-family: inherit;
+=======
+  font-family: vars.$font-family;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   font-size: 1em;
   padding-left: 0.625em;
   padding-top: 0.625em;
@@ -29,7 +41,10 @@ textarea {
 .form {
   width:100%;
   margin: auto;
+<<<<<<< HEAD
   margin-bottom: 1em;
+=======
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   display: flex;
   flex-direction: column;
   border-radius: vars.$btn-radius;
@@ -55,6 +70,7 @@ textarea {
     flex-direction: column;
   }
 }
+<<<<<<< HEAD
 
 // ALL PAGE
 .contact {
@@ -81,11 +97,19 @@ textarea {
       display: flex;
       align-items: center;
       justify-content: flex-end;
+=======
+.contact {
+  &__block--right {
+    width: 100%; 
+    @media (min-width: 768px) {
+      width: 30%;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
     }
   }
   &__text {
     margin-bottom: 1.5em;
   }
+<<<<<<< HEAD
   &__img-container {
     max-width: 80%;
     margin: auto;
@@ -100,6 +124,13 @@ textarea {
     @media (min-width: 768px) {
       width: 100%;
       // min-width: 250px;
+=======
+  &__block--right--img {
+    width: 80%; 
+    @media (min-width: 768px) {
+      width: 60%;
+      min-width: 250px;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
     }
   }
 }

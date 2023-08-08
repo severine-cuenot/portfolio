@@ -3,7 +3,11 @@
 .button {
   font-weight: bold;
   font-size: 1em;
+<<<<<<< HEAD
   font-family: inherit;
+=======
+  font-family: vars.$font-family;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   text-align: left;
   border: none;
   border-radius: vars.$btn-radius;
@@ -24,7 +28,11 @@
     margin-bottom: 1em;
     font-weight: bold;
     font-size: 1em;
+<<<<<<< HEAD
     font-family: inherit;
+=======
+    font-family: vars.$font-family;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
     text-align: left;
     border: none;
     border-radius: vars.$btn-radius;
@@ -51,7 +59,11 @@
   display: flex;
   align-items: center;
   font-size: inherit;
+<<<<<<< HEAD
   font-family: inherit;
+=======
+  font-family: vars.$font-family;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   border: none;
   padding: 0 2em;
   background-color: vars.$yellow;
@@ -72,7 +84,11 @@
   border-radius: vars.$btn-radius;
   font-size: inherit;
   font-weight: bold;
+<<<<<<< HEAD
   font-family: inherit;
+=======
+  font-family: vars.$font-family;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   color: vars.$dark-color;
   border: none;
   line-height: 1.8em;
