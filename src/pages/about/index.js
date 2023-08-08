@@ -34,7 +34,7 @@ function About() {
         <div className="section__box--text">
           <h2 className="section__subtitle">Le changement de cap...</h2>
           <p className="section__text">
-            Grâce à Transition Pro, j'ai eu la chance d'intégrer l'Ecole O'Clock en mai 2022 pour une formation Fullstack Javascript, très intensive et se déroulant sur 5 mois en téléprésentiel :
+            Grâce à Transition Pro, j'ai eu la chance d'intégrer l'Ecole O'Clock en mai 2022 pour une formation Fullstack Javascript, très intensive et se déroulant sur 5 mois en téléprésentiel&nbsp;:
           </p>
 
           <ul className="section__list">
@@ -45,7 +45,7 @@ function About() {
 
           <p className="section__text">La formation s'est achevée en octobre 2022 et j'ai repris mon poste dans mon entreprise actuelle pour préparer en parallèle l'examen, prévu début 2023. </p>
 
-          <p className="section__text">Examen passé avec succès et surtout une grande fiertéé&nbsp;! Je suis actuellement détentrice du dévévé-ème, plus officiellement appelé "Titre Professionnel Développeur Web et Web modile" de niveau&nbsp;III.</p>
+          <p className="section__text">Examen passé avec succès et surtout une grande fierté&nbsp;! Je suis actuellement détentrice du dévévé-ème, plus officiellement appelé "Titre Professionnel Développeur Web et Web modile" de niveau&nbsp;III.</p>
 
           <h2 className="section__subtitle">Des projets à foison...</h2>
 

@@ -106,9 +106,12 @@
   &__element {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 2em;
+    padding-right: 2em;
     align-items: center;
     background-color: vars.$white-color-trans;
+  }
+  &__element-link {
+    padding: 1.2em;
   }
 
   &__element :visited {

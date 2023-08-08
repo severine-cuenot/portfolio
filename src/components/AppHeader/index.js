@@ -7,7 +7,6 @@ import ToggleMobile from '../Toggle/toggle-mobile';
 import ToggleDesktop from '../Toggle/toggle-desktop';
 
 import './style.scss';
-// import ToggleDesktop from '../Toggle/toggle-desktop';
 
 function AppHeader({ handleChangeFont }) {
   const [isExpanded, setExpanded] = useState(false);
@@ -52,11 +51,11 @@ function AppHeader({ handleChangeFont }) {
           <ToggleDesktop onClick={handleChangeFont} className="main-nav-desktopToggle" />
         </div>
         <ul className="main-nav-desktop__block">
-          <li className="main-nav-desktop__element"><Link to="/">0. Accueil</Link></li>
-          <li className="main-nav-desktop__element"><Link to="/parcours">1. Parcours</Link></li>
-          <li className="main-nav-desktop__element"><Link to="/experience">2. Expérience</Link></li>
-          <li className="main-nav-desktop__element"><Link to="/realisations">3. Réalisations</Link></li>
-          <li className="main-nav-desktop__element"><Link to="/contact">4. Contact</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/" className="main-nav-desktop__element-link">0. Accueil</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/parcours" className="main-nav-desktop__element-link">1. Parcours</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/experience" className="main-nav-desktop__element-link">2. Expérience</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/realisations" className="main-nav-desktop__element-link">3. Réalisations</Link></li>
+          <li className="main-nav-desktop__element"><Link to="/contact" className="main-nav-desktop__element-link">4. Contact</Link></li>
           <li><a href="../../pdf/severine_cuenot_dev_cv.pdf" target="_blank"><Button label="5. Télécharger mon CV" className="button__CV" type="button" /></a></li>
         </ul>
       </nav>
