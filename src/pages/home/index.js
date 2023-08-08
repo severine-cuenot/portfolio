@@ -42,19 +42,19 @@ function Home() {
                 </Link>
               </div>
               <p className="section__text">
-                Illustratrice & secrétaire de rédaction web en reconversion professionnelle,
-                Séverine aimerait bien trouver un poste dans une entreprise dynamique
-                et bienveillante afin de consolider ses acquis et, surtout,
-                d'apprendre encore et toujours de nouvelles choses.
+                A l'origine illustratrice et secrétaire de rédaction web,
+                j'ai entrepris une reconversion professionnelle pour suivre
+                ma nouvelle passion pour le web. J'aspire à rejoindre une entreprise dynamique
+                et bienveillante qui me permettra de renforcer mes compétences, mais aussi
+                de continuer à apprendre, encore et toujours.
               </p>
               <p className="section__text">
-                Après des années d'intégration web en autodidacte et une formation intensive
-                de 5&nbsp;mois en Fullstack JS, elle souhaite continuer à faire des
-                belles choses en Front, ayant une appétance particulière pour
-                React.js et le CSS (surtout le CSS &hearts;).
-              </p>
-              <p className="section__text">
-                (et aussi pour qu'elle sache rendre ce site vachement plus attrayant et badass).
+                Après avoir développé mes compétences en intégration web en autodidacte
+                pendant des années, j'ai récemment suivi une formation intensive
+                de 5 mois en Fullstack JS, spécialisation React.js. Désormais, je souhaite
+                me concentrer sur le Front-end, car mon amour pour
+                tout ce qui est graphique - le CSS en particulier (le CSS, c'est la vie ♥) -
+                est demeuré intact.
               </p>
               <Link to="/parcours"><Button label="En savoir plus_" type="button" /></Link>
               <div className="section__logo">

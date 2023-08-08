@@ -1,4 +1,5 @@
 // import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 function AppFooter() {
@@ -13,7 +14,9 @@ function AppFooter() {
         </p>
       </div>
       <div className="footer__copyright">
-        <p>Tous droits réservés &copy; Séverine Cuenot {year}</p>
+        <p>Tous droits réservés &copy; Séverine Cuenot {year}<br />
+          <Link to="/credits" className="footer__link">&#9825; Crédits </Link>
+        </p>
       </div>
     </footer>
   );

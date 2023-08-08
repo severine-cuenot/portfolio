@@ -2,6 +2,14 @@
 
 // Menu for mobiles
 
+<<<<<<< HEAD
+.left__part{
+  display: flex;
+  flex-direction: column;
+}
+
+=======
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
 .main-nav {
   display: block;
   margin: 1em 1.4em 0 1em;
@@ -17,6 +25,10 @@
   // Logo signature
   &__logo {
     height: 5em;
+<<<<<<< HEAD
+    margin-bottom: 0.6em;
+=======
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   }
 
   // Burger
@@ -25,7 +37,11 @@
     width: 4.5em;
     border: none;
     border-radius: vars.$btn-radius;
+<<<<<<< HEAD
+    font-family: inherit;
+=======
     font-family: vars.$font-family;
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
     font-size: vars.$font-medium;
 	  line-height: 1;
   }
@@ -76,8 +92,13 @@
 .main-nav-desktop {
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
+  align-items: center;
+  margin: 1em 0 0 1em;
+=======
   margin: 1em 0 0 1em;
 
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
   @media (max-width: 768px) {
     display: none;
   }

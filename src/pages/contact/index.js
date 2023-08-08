@@ -24,6 +24,15 @@ function Contact() {
           m'écrire à <a href={emailLink} className="link">{emailText}</a> ou bien remplir le formulaire ci-dessous.
         </p>
 
+<<<<<<< HEAD
+        <div className="contact__blocks">
+          <div className="contact__block--left">
+            <ContactForm />
+          </div>
+          <div className="contact__block--right">
+            <aside className="contact__img-container">
+              <img src="../../img/nine_plume.png" className="contact__block--right--img" alt="Nine" />
+=======
         <div className="section__blocks">
           <div className="section__block--left">
             <ContactForm />
@@ -31,6 +40,7 @@ function Contact() {
           <div className="contact__block--right">
             <aside>
               <img src="../../img/nine_liberty.png" className="contact__block--right--img" alt="Nine" />
+>>>>>>> e0283fa52cfe44c35e768e0ace20cff3746a0529
             </aside>
           </div>
         </div>

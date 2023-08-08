@@ -5,7 +5,7 @@ import './style.scss';
 function NotFound() {
   return (
     <Page>
-      <p>test</p>
+      <p>Ici va y avoir mon illu spéciale "Erreur 404 : page non trouvée" </p>
     </Page>
   );
 }
