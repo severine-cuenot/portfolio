@@ -7,7 +7,7 @@ import useScrollTop from '../../hooks/useScrollTop';
 // import pages
 import Home from '../../pages/home';
 import About from '../../pages/about';
-import Experience from '../../pages/Experience';
+import Experience from '../../pages/experience';
 import Realisations from '../../pages/realisations';
 import Contact from '../../pages/contact';
 import Credits from '../../pages/credits';
