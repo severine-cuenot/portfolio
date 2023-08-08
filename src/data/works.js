@@ -8,7 +8,7 @@ export default [
     img: 'saevoir.png',
     text: 'Ce charmant projet de petites annonces dédiées au partage de connaissances est le fruit du travail d\'une équipe de cinq personnes passionnées, comprenant deux développeurs back-end et trois développeurs front-end. Bien que l\'accessibilité et l\'inclusivité n\'aient pas été incluses dans notre programme de formation, nous avons pris à cœur de les intégrer dans ce projet. Avec seulement un mois à notre disposition, nous avons accompli tout ce que nous pouvions pour respecter cette orientation, en apprenant sur le tas. Actuellement, le site n\'est plus maintenu, mais vous pouvez visionner sa vidéo de présentation réalisée dans le cadre de la validation de notre formation en cliquant ici :',
     tools: [<img src="../../img/react.png" alt="React.js" className="work__tool--img" />, <img src="../../img/react_redux.png" alt="React-Redux" className="work__tool--img" />, <img src="../../img/react-router.png" alt="React Router DOM" className="work__tool--img" />, <img src="../../img/sass.png" alt="Scss" className="work__tool--img" />, <img src="../../img/nodemailer.png" alt="Nodemailer" className="work__tool--img" />, <img src="../../img/axios.png" alt="Axios" className="work__tool--img" />, <img src="../../img/postgresql.png" alt="Postgresql" className="work__tool--img" />, <img src="../../img/sqitch.png" alt="Sqitch" className="work__tool--img" />, <img src="../../img/jwt.png" alt="JWT" className="work__tool--img" />, <img src="../../img/postman.png" alt="Postman" className="work__tool--img" />, <img src="../../img/github-mark-white.png" alt="Github" className="work__tool--img" />],
-    link: 'signature.png',
+    link: 'https://drive.google.com/file/d/1KrQZVzHvCG3OJlOZF9GYA4pwrDh-cR7W/view?usp=drive_link',
     label: 'Voir la vidéo_',
   },
   {
@@ -56,7 +56,7 @@ export default [
     img: 'portfolio.png',
     text: 'Ce site a été conçu en adoptant une approche mobile first avec React.JS. Il s\'agit d\'un projet entièrement axé sur le Front-End que j\'ai réalisé en solo, représentant également le tout premier projet que j\'ai entrepris depuis ma formation. Cette expérience a été très enrichissante, me permettant de faire le point sur mes compétences actuelles. Je suis particulièrement enthousiaste à l\'idée de me perfectionner pour améliorer ce projet ! (et puis il fallait bien que je m\'amuse à mettre une petite recursion quelque part :D)',
     tools: [<img src="../../img/react.png" alt="React.js" className="work__tool--img" />, <img src="../../img/react_redux.png" alt="React-Redux" className="work__tool--img" />, <img src="../../img/react-router.png" alt="React Router DOM" className="work__tool--img" />, <img src="../../img/sass.png" alt="Scss" className="work__tool--img" />, <img src="../../img/emailjs.png" alt="EmailJS" className="work__tool--img" />, <img src="../../img/github-mark-white.png" alt="Github" className="work__tool--img" />],
-    link: '',
-    label: '',
+    link: 'http://severine-cuenot.surge.sh/',
+    label: 'Retourner à l\'accueil_',
   },
 ];
