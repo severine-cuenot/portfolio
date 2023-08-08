@@ -22,7 +22,7 @@ function ToggleMobile({ onClick }) {
             </span>
           </span>
         </span>
-        Dysléxie
+        Dyslexie
       </label>
     </div>
 

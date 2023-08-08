@@ -22,7 +22,7 @@ function ToggleDesktop({ onClick }) {
             </span>
           </span>
         </span>
-        Dysléxie
+        Dyslexie
       </label>
     </div>
   );
