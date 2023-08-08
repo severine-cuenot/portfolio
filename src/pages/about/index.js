@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import Page from '../../components/Page';
 
+import './style.scss';
+
 function About() {
   return (
     <Page>
