@@ -41,7 +41,7 @@ function AppHeader({ handleChangeFont }) {
           <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/experience">2. Expérience</Link></li>
           <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/realisations">3. Réalisations</Link></li>
           <li className="main-nav__menu-expanded--element" onClick={handleClick}><Link to="/contact">4. Contact</Link></li>
-          <li className="main-nav__menu-expanded--element" onClick={handleClick}><a href="../../pdf/severine_cuenot_dev_cv.pdf">5. Télécharger mon CV</a></li>
+          <li className="main-nav__menu-expanded--element" onClick={handleClick}><a href="../../img/cv_cuenot_severine.jpg">5. Télécharger mon CV</a></li>
         </ul>
       </nav>
       {/* // Navbar for desktop */}
@@ -56,7 +56,7 @@ function AppHeader({ handleChangeFont }) {
           <li className="main-nav-desktop__element"><Link to="/experience" className="main-nav-desktop__element-link">2. Expérience</Link></li>
           <li className="main-nav-desktop__element"><Link to="/realisations" className="main-nav-desktop__element-link">3. Réalisations</Link></li>
           <li className="main-nav-desktop__element"><Link to="/contact" className="main-nav-desktop__element-link">4. Contact</Link></li>
-          <li><a href="../../pdf/severine_cuenot_dev_cv.pdf" target="_blank"><Button label="5. Télécharger mon CV" className="button__CV" type="button" /></a></li>
+          <li><a href="../../img/cv_cuenot_severine.jpg" target="_blank"><Button label="5. Télécharger mon CV" className="button__CV" type="button" /></a></li>
         </ul>
       </nav>
 
