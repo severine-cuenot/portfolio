@@ -30,6 +30,17 @@ function App() {
     setFontChange(!isFontChanged);
   };
 
+  // const [dateState, setDateState] = useState(new Date());
+  // // Add 2 months to current date
+  // const months = 2;
+  // dateState.setMonth(dateState.getMonth() + months);
+
+  // // Refresh DOM every 10 min
+  // useEffect(() => {
+  //   const interval = setInterval(() => setDateState(new Date()), 600000);
+  //   return () => clearInterval(interval); // Clear interval on component unmount
+  // }, []);
+
   return (
     <div className="app">
       <div className={`app ${isFontChanged ? 'changed-font' : 'default-font'}`}>

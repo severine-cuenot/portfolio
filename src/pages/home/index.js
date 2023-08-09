@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+// import PropTypes from 'prop-types';
 
 import Page from 'src/components/Page';
 import Button from '../../components/Button';
@@ -8,13 +9,22 @@ import './style.scss';
 
 function Home() {
   const [dateState, setDateState] = useState(new Date());
-  // Add 2 months to current date
-  const months = 2;
-  dateState.setMonth(dateState.getMonth() + months);
 
-  // Refresh DOM every 10 min
   useEffect(() => {
-    setInterval(() => setDateState(new Date()), 600000);
+    // Add 2 months to current date
+    const months = 2;
+    const newDate = new Date(dateState);
+    newDate.setMonth(newDate.getMonth() + months);
+    setDateState(newDate);
+
+    // Refresh DOM every 10 min
+    const interval = setInterval(() => {
+      const currentDate = new Date(dateState);
+      currentDate.setMinutes(currentDate.getMinutes() + 10);
+      setDateState(currentDate);
+    }, 600000);
+
+    return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
 
   return (
@@ -73,5 +83,9 @@ function Home() {
     </Page>
   );
 }
+
+// Home.propTypes = {
+//   dateState: PropTypes.func.isRequired,
+// };
 
 export default Home;

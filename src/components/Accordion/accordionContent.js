@@ -8,6 +8,8 @@ function AccordionContent({ experience, onToggle, active }) {
   } = experience;
   // Transform row html in JSON to "real" html. Merci ChatGPT !
   const createMarkup = () => ({ __html: content });
+  // Are tools available?
+  const toolsAvailable = tools.length > 0;
 
   return (
     <li className={`accordion__item ${active ? 'active' : ''}`}>
@@ -15,17 +17,17 @@ function AccordionContent({ experience, onToggle, active }) {
         <span className="accordion__picto">{active ? '—' : '+'}</span>
         {title}
       </button>
-      {/* <div className={`answer_wrapper ${active ? 'open' : ''}`}>
-        <div className="accordion__content" dangerouslySetInnerHTML={createMarkupForDate()} />
-        <div className="accordion__content" dangerouslySetInnerHTML={createMarkupForJob()} />
-        <div className="accordion__content" dangerouslySetInnerHTML={createMarkup()} />
-      </div> */}
       <div className={`answer_wrapper ${active ? 'open' : ''}`}>
         <div className="accordion__date">{date}</div>
         <div className="accordion__job">{job}</div>
         <div className="accordion__content" dangerouslySetInnerHTML={createMarkup()} />
-        <div className="content__skills--title">Outils utilisés</div>
-        <div className="accordion__tools">{tools}</div>
+        {/* Show tools if not empty */}
+        {toolsAvailable && (
+          <div>
+            <div className="content__skills--title">Outils utilisés</div>
+            <div className="accordion__tools">{tools}</div>
+          </div>
+        )}
       </div>
     </li>
   );

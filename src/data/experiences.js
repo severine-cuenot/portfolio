@@ -20,11 +20,11 @@ export default [
   {
     id: 2,
     title: 'Globe Diffusion',
-    date: '<Octobre 2012 - octobre 2014',
+    date: 'Octobre 2012 - octobre 2014',
     job: 'Colporteuse',
     content:
       'Pendant deux ans, j\'ai eu l\'occasion de travailler tous les matins à la distribution d\'un quotidien gratuit à la sortie du métro - et parfois à des échantillons de produits -, par tous les temps. Cette expérience, bien que physiquement éprouvante, m\'a permi de parfaire certaines compétences : <ul class="content__list"><li>L\'autonomie dans le travail</li><li>La relation et la fidélisations clients</li><li>La gestion des stocks en fonction des jours</li><li>La résilience</li></ul>',
-    tools: ['non applicable'],
+    tools: [],
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export default [
     date: '',
     job: '',
     content:
-      'Outre ces CDI, j\'ai effectué quelques missions en CDD lors de mes études, m\'ayant permi une fois encore de découvrire différents domaines professionnels et d\'étendre mes connaissances. <div class="date">2003</div><div class="content__subtitle">●●● Employée saisonniaire au Conseil Général du Haut-Rhin, service de l\'aide aux personnes âgées</div><ul class="content__list"><li>Secrétariat téléphonique</li><li>Gestion du courrier entrant et sortant</li></ul> <div class="date">2002</div><div class="content__subtitle">●●● Employée saisonniaire au Conseil Général du Haut-Rhin, service Dépendance et Handicap</div><ul class="content__list"><li>Secrétaria téléphonique</li><li>Gestion du courrier</li><li>tri et archivage dans le cadre du déménagement des bureaux</li></ul><div class="date">2001</div><div class="content__subtitle">●●● Employée libre-service dans un supermarché</div><ul class="content__list"><li>Remplissage de divers rayons</li><li>Gestion des stocks</li><li>Inventaires</li><li>Etiquetage des prix</li></ul>',
+      'Outre ces CDI, j\'ai effectué quelques missions en CDD lors de mes études, m\'ayant permi une fois encore de découvrir différents domaines professionnels et d\'étendre mes connaissances. <div class="date">2003</div><div class="content__subtitle">●●● Employée saisonniaire au Conseil Général du Haut-Rhin, service de l\'aide aux personnes âgées</div><ul class="content__list"><li>Secrétariat téléphonique</li><li>Gestion du courrier entrant et sortant</li></ul> <div class="date">2002</div><div class="content__subtitle">●●● Employée saisonniaire au Conseil Général du Haut-Rhin, service Dépendance et Handicap</div><ul class="content__list"><li>Secrétariat téléphonique</li><li>Gestion du courrier</li><li>tri et archivage dans le cadre du déménagement des bureaux</li></ul><div class="date">2001</div><div class="content__subtitle">●●● Employée libre-service dans un supermarché</div><ul class="content__list"><li>Remplissage de divers rayons, facing</li><li>Gestion des stocks</li><li>Inventaires</li><li>Etiquetage des prix</li></ul>',
     tools: [<img src="../../img/word.png" alt="Microsoft Word" className="accordion__tools--img" />, <img src="../../img/outlook.png" alt="Microsoft Outlook" className="accordion__tools--img" />, <img src="../../img/excel.png" alt="Microsoft Excel" className="accordion__tools--img" />],
   },
 ];
