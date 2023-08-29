@@ -45,7 +45,7 @@ function About() {
 
           <p className="section__text">La formation s'est achevée en octobre 2022 et j'ai repris mon poste dans mon entreprise actuelle pour préparer en parallèle l'examen, prévu début 2023. </p>
 
-          <p className="section__text">Examen passé avec succès et surtout une grande fierté&nbsp;! Je suis actuellement détentrice du dévévé-ème, plus officiellement appelé "Titre Professionnel Développeur Web et Web modile" de niveau&nbsp;III.</p>
+          <p className="section__text">Examen passé avec succès et surtout une grande fierté&nbsp;! Je suis actuellement détentrice du dévévé-ème, plus officiellement appelé "Titre Professionnel Développeur Web et Web mobile" de niveau&nbsp;III.</p>
 
           <h2 className="section__subtitle">Des projets à foison...</h2>
 
@@ -57,7 +57,7 @@ function About() {
 
           <p className="section__text">Malgré ma reconversion, je reste profondément attachée à mes passions premières : l'illustration, l'écriture, la photographie et les créations au crochet. J'espère pouvoir les exploiter d'autant plus grâce à la création de sites internet dédiés à ces domaines. </p>
 
-          <p className="section__text">Et, qui sait, peut-être que mon obsession inavouable pour l'aquariophilie me donnera elle aussi une raison de perfectionner mes compétences de développeuse... toutes les excuses sont bonnes pour allier travail et passion&nbsp;! </p>
+          <p className="section__text">Et, qui sait, peut-être que mon obsession pour l'aquariophilie me donnera elle aussi une raison de perfectionner mes compétences de développeuse... toutes les excuses sont bonnes pour allier travail et passion&nbsp;! </p>
 
           <div className="section__testi">
             <div className="section__testi-content">
