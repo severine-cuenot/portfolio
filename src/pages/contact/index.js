@@ -5,7 +5,7 @@ import './style.scss';
 
 function Contact() {
   // hashing email in many parts to avoid spam robots, with the help of Safe Brand website
-  const emailPart1 = 'severine.cuenot.dev';
+  const emailPart1 = 'cuenot.severine.dev';
   const emailPart2 = 2 ** 6;
   const emailPart3 = String.fromCharCode(emailPart2);
   const emailPart4 = 'gmail.com';
