@@ -96,6 +96,14 @@ function About() {
                 Lay-Chan L., Directrice des Opérations & Marketing Tech aux Publications Agora
               </p>
             </div>
+            <div className="section__testi-content">
+              <p className="section__testi-text">
+                "J’ai travaillé avec Séverine entre 2010 et 2021, et j’ai grandement apprécié sa motivation, son sérieux, sa créativité, sa volonté de toujours apprendre et surtout ses capacités à trouver des solutions pour répondre à chaque demande. Viennent s’ajouter à toutes ces qualités une patience inébranlable et une attitude résolument positive dans les moments difficiles qui rendent la collaboration avec Séverine aussi agréable qu’efficace."
+              </p>
+              <p className="section__testi-name">
+                Françoise G., directrice de la rédaction aux Publications Agora jusqu’en octobre 2021
+              </p>
+            </div>
           </div>
           <Link to="/experience"><Button label="Expérience_" type="button" /></Link>
         </div>
